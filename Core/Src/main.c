@@ -62,7 +62,7 @@ uint32_t Drum_LUT = { 2047, 3396, 1864, 2110, 2063, 3400, 1893, 1933, 2086, 2144
 
 
 
-
+///hhj
 // TODO: Equation to calculate TIM2_Ticks
 uint32_t TIM2_Ticks = (TIM2CLK / (NS * F_SIGNAL))  //
 ; // How often to write new LUT value
