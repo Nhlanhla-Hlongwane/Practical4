@@ -35,3 +35,46 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-10-02 13:10:37.308
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2025-10-02 13:51:14.678
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-10-02 13:51:14.681
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-10-02 13:51:14.682
+!MESSAGE C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4 overlaps the workspace location: C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4
+
+!ENTRY org.eclipse.core.resources 4 77 2025-10-02 13:51:46.773
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-10-02 13:51:46.773
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-10-02 13:51:46.773
+!MESSAGE C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4 overlaps the workspace location: C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4
+
+!ENTRY org.eclipse.core.resources 4 77 2025-10-02 13:53:18.343
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-10-02 13:53:18.343
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-10-02 13:53:18.344
+!MESSAGE C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4 overlaps the workspace location: C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4
+!SESSION 2025-10-02 13:54:04.430 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-10-02 13:54:19.042
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-10-02 13:54:19.045
+!MESSAGE Log4j2 initialized with config file C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-10-02 13:54:24.739
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2025-10-02 13:59:46.446
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-10-02 13:59:46.447
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-10-02 13:59:46.447
+!MESSAGE C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4 overlaps the workspace location: C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4
