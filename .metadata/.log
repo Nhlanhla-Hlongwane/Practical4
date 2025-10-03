@@ -129,3 +129,10 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\nhlan\O
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-10-03 11:33:00.907
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 77 2025-10-03 11:42:07.623
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2025-10-03 11:42:07.624
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2025-10-03 11:42:07.624
+!MESSAGE C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4 overlaps the workspace location: C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4
