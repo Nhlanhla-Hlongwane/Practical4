@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Kr70MJ78EfCyU5WG5DByKg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_Kr70MZ78EfCyU5WG5DByKg" bindingContexts="_KsGzU578EfCyU5WG5DByKg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4\Core\Src\main.c&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/nhlan/OneDrive%20-%20University%20of%20Cape%20Town/EEE3095S/Practical4/Practical_4/Practical4/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Core\Src\main.c&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/nhlan/OneDrive%20-%20University%20of%20Cape%20Town/EEE3095S/Practical4/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; tooltip=&quot;C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4\Core\Src\main.c&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/C:/Users/nhlan/OneDrive%20-%20University%20of%20Cape%20Town/EEE3095S/Practical4/Practical_4/Practical4/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_Kr70MZ78EfCyU5WG5DByKg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_Kr70Mp78EfCyU5WG5DByKg" x="192" y="192" width="1050" height="768">
     <persistedState key="coolBarVisible" value="true"/>
@@ -87,7 +87,7 @@
             <children xsi:type="basic:PartSashContainer" xmi:id="_Kr70Op78EfCyU5WG5DByKg" containerData="7500" selectedElement="_Kr70O578EfCyU5WG5DByKg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_Kr70O578EfCyU5WG5DByKg" containerData="7500" selectedElement="_Kr70PJ78EfCyU5WG5DByKg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_Kr70PJ78EfCyU5WG5DByKg" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_KsB65578EfCyU5WG5DByKg"/>
-                <children xsi:type="basic:PartStack" xmi:id="_Kr70PZ78EfCyU5WG5DByKg" elementId="topRight" containerData="2500" selectedElement="_Kr70Pp78EfCyU5WG5DByKg">
+                <children xsi:type="basic:PartStack" xmi:id="_Kr70PZ78EfCyU5WG5DByKg" elementId="topRight" containerData="2500" selectedElement="_Kr70QJ78EfCyU5WG5DByKg">
                   <children xsi:type="advanced:Placeholder" xmi:id="_Kr70Pp78EfCyU5WG5DByKg" elementId="org.eclipse.ui.views.ContentOutline" ref="_KsCh_Z78EfCyU5WG5DByKg" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -180,12 +180,18 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_KsB65578EfCyU5WG5DByKg" elementId="org.eclipse.ui.editorss" selectedElement="_KsB66J78EfCyU5WG5DByKg">
-      <children xsi:type="basic:PartStack" xmi:id="_KsB66J78EfCyU5WG5DByKg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_66NNIJ-FEfCRb9BnQ62djQ">
+      <children xsi:type="basic:PartStack" xmi:id="_KsB66J78EfCyU5WG5DByKg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_fiCf4KA6EfCP_Oru-uLe7Q">
         <tags>EditorStack</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_66NNIJ-FEfCRb9BnQ62djQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4\Core\Src\main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/Users/nhlan/OneDrive%20-%20University%20of%20Cape%20Town/EEE3095S/Practical4/Practical_4/Practical4/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;8722&quot; selectionTopPixel=&quot;2930&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Practical_4\Practical4\Core\Src\main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/Users/nhlan/OneDrive%20-%20University%20of%20Cape%20Town/EEE3095S/Practical4/Practical_4/Practical4/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_fiCf4KA6EfCP_Oru-uLe7Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="main.c" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;main.c&quot; partName=&quot;main.c&quot; title=&quot;main.c&quot; tooltip=&quot;C:\Users\nhlan\OneDrive - University of Cape Town\EEE3095S\Practical4\Core\Src\main.c&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;file:/C:/Users/nhlan/OneDrive%20-%20University%20of%20Cape%20Town/EEE3095S/Practical4/Core/Src/main.c&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;7693&quot; selectionTopPixel=&quot;1887&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
@@ -339,7 +345,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KsDI_J78EfCyU5WG5DByKg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hrGD4J-GEfCDP8FnKTRzEQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_KsOJO578EfCyU5WG5DByKg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_W8tBwKA6EfCP_Oru-uLe7Q" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_KsOJO578EfCyU5WG5DByKg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KsDJC578EfCyU5WG5DByKg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -347,8 +353,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KsDJDZ78EfCyU5WG5DByKg" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hrH5EJ-GEfCDP8FnKTRzEQ" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_KsOJKZ78EfCyU5WG5DByKg"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hrJHMJ-GEfCDP8FnKTRzEQ" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_KsOvRZ78EfCyU5WG5DByKg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_W8xTMKA6EfCP_Oru-uLe7Q" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_KsOJKZ78EfCyU5WG5DByKg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_W8zvcKA6EfCP_Oru-uLe7Q" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_KsOvRZ78EfCyU5WG5DByKg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KsDJFZ78EfCyU5WG5DByKg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -372,7 +378,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KsEXEZ78EfCyU5WG5DByKg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_hrJuQJ-GEfCDP8FnKTRzEQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_KsOI3578EfCyU5WG5DByKg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_W82ywKA6EfCP_Oru-uLe7Q" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_KsOI3578EfCyU5WG5DByKg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KsEXH578EfCyU5WG5DByKg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.cdt.ui.CElementWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1759483754481_2" label="Practical4" name="Practical4"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1759255703271_0" label="Window Working Set" name="Aggregate for window 1759255703270"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1759403433166_1" label="Window Working Set" name="Aggregate for window 1759403433166"/>
+<mruList name="Practical4"/>
 </workingSetManager>
