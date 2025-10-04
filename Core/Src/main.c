@@ -36,7 +36,7 @@
 // TODO: Add values for below variables
 #define NS 128        // Number of samples in LUT
 #define TIM2CLK 16000000  // STM Clock frequency: Hint You might want to check the ioc file
-#define F_SIGNAL 5000 	// Frequency of output analog signal
+#define F_SIGNAL 10000	// Frequency of output analog signal
 
 /* USER CODE END PD */
 
@@ -214,7 +214,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 4294967295;
+  htim2.Init.Period = TIM2_Ticks - 1;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -237,7 +237,8 @@ static void MX_TIM2_Init(void)
     Error_Handler();
   }
   sConfigOC.OCMode = TIM_OCMODE_TIMING;
-  sConfigOC.Pulse = 0;
+
+  sConfigOC.Pulse = TIM2_Ticks - 1;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   if (HAL_TIM_OC_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
@@ -451,11 +452,7 @@ HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0); // Clear interrupt
         // Move to next waveform
         currentWave = (currentWave + 1) % WAVE_COUNT;
 
-        // Restart DMA with new LUT
-        HAL_DMA_Start_IT(&hdma_tim2_ch1,
-                         (uint32_t)waveforms[currentWave],
-                         (uint32_t)&htim2.Instance->CCR1,
-                         NS);
+      HAL_DMA_Start_IT(&hdma_tim2_ch1,(uint32_t)waveforms[currentWave],DestAddress, NS);
 
         __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
