@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Parameters
-LUT_SIZE = 128
+LUT_SIZE = 256
 DAC_RESOLUTION = 4095
 
 def wav_to_lut(filename, lut_size=LUT_SIZE):
