@@ -1541,7 +1541,7 @@ LOAD c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode
 .rel.dyn        0x080026d8        0x0
  .rel.iplt      0x080026d8        0x0 c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000      0xe44 load address 0x080026d8
+.data           0x20000000     0x1e44 load address 0x080026d8
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -1559,81 +1559,81 @@ LOAD c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode
                 0x20000034        0x4 build/release/main.o
                 0x20000034                TIM2_Ticks
  .data.Drum_LUT
-                0x20000038      0x400 build/release/main.o
+                0x20000038      0x800 build/release/main.o
                 0x20000038                Drum_LUT
  .data.Guitar_LUT
-                0x20000438      0x200 build/release/main.o
-                0x20000438                Guitar_LUT
+                0x20000838      0x800 build/release/main.o
+                0x20000838                Guitar_LUT
  .data.Piano_LUT
-                0x20000638      0x200 build/release/main.o
-                0x20000638                Piano_LUT
+                0x20001038      0x800 build/release/main.o
+                0x20001038                Piano_LUT
  .data.Triangle_LUT
-                0x20000838      0x200 build/release/main.o
-                0x20000838                Triangle_LUT
- .data.Saw_LUT  0x20000a38      0x200 build/release/main.o
-                0x20000a38                Saw_LUT
- .data.Sin_LUT  0x20000c38      0x200 build/release/main.o
-                0x20000c38                Sin_LUT
+                0x20001838      0x200 build/release/main.o
+                0x20001838                Triangle_LUT
+ .data.Saw_LUT  0x20001a38      0x200 build/release/main.o
+                0x20001a38                Saw_LUT
+ .data.Sin_LUT  0x20001c38      0x200 build/release/main.o
+                0x20001c38                Sin_LUT
  .data.uwTickFreq
-                0x20000e38        0x1 build/release/stm32f4xx_hal.o
-                0x20000e38                uwTickFreq
- *fill*         0x20000e39        0x3 
+                0x20001e38        0x1 build/release/stm32f4xx_hal.o
+                0x20001e38                uwTickFreq
+ *fill*         0x20001e39        0x3 
  .data.uwTickPrio
-                0x20000e3c        0x4 build/release/stm32f4xx_hal.o
-                0x20000e3c                uwTickPrio
+                0x20001e3c        0x4 build/release/stm32f4xx_hal.o
+                0x20001e3c                uwTickPrio
  .data.SystemCoreClock
-                0x20000e40        0x4 build/release/system_stm32f4xx.o
-                0x20000e40                SystemCoreClock
+                0x20001e40        0x4 build/release/system_stm32f4xx.o
+                0x20001e40                SystemCoreClock
  *(.RamFunc)
  *(.RamFunc*)
-                0x20000e44                        . = ALIGN (0x4)
-                0x20000e44                        _edata = .
+                0x20001e44                        . = ALIGN (0x4)
+                0x20001e44                        _edata = .
 
-.igot.plt       0x20000e44        0x0 load address 0x0800351c
- .igot.plt      0x20000e44        0x0 c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x20000e44                        . = ALIGN (0x4)
+.igot.plt       0x20001e44        0x0 load address 0x0800451c
+ .igot.plt      0x20001e44        0x0 c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20001e44                        . = ALIGN (0x4)
 
-.bss            0x20000e44      0x118 load address 0x0800351c
-                0x20000e44                        _sbss = .
-                0x20000e44                        __bss_start__ = _sbss
+.bss            0x20001e44      0x118 load address 0x0800451c
+                0x20001e44                        _sbss = .
+                0x20001e44                        __bss_start__ = _sbss
  *(.bss)
  *(.bss*)
  .bss.completed.1
-                0x20000e44        0x1 c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/crtbegin.o
- *fill*         0x20000e45        0x3 
- .bss.object.0  0x20000e48       0x18 c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x20001e44        0x1 c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/crtbegin.o
+ *fill*         0x20001e45        0x3 
+ .bss.object.0  0x20001e48       0x18 c:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/14.2.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/14.2.1/thumb/v7e-m+fp/hard/crtbegin.o
  .bss.currentWave
-                0x20000e60        0x1 build/release/main.o
-                0x20000e60                currentWave
- *fill*         0x20000e61        0x3 
+                0x20001e60        0x1 build/release/main.o
+                0x20001e60                currentWave
+ *fill*         0x20001e61        0x3 
  .bss.lastDebounceTick
-                0x20000e64        0x4 build/release/main.o
-                0x20000e64                lastDebounceTick
+                0x20001e64        0x4 build/release/main.o
+                0x20001e64                lastDebounceTick
  .bss.hdma_tim2_ch1
-                0x20000e68       0x60 build/release/main.o
-                0x20000e68                hdma_tim2_ch1
- .bss.htim3     0x20000ec8       0x48 build/release/main.o
-                0x20000ec8                htim3
- .bss.htim2     0x20000f10       0x48 build/release/main.o
-                0x20000f10                htim2
- .bss.uwTick    0x20000f58        0x4 build/release/stm32f4xx_hal.o
-                0x20000f58                uwTick
+                0x20001e68       0x60 build/release/main.o
+                0x20001e68                hdma_tim2_ch1
+ .bss.htim3     0x20001ec8       0x48 build/release/main.o
+                0x20001ec8                htim3
+ .bss.htim2     0x20001f10       0x48 build/release/main.o
+                0x20001f10                htim2
+ .bss.uwTick    0x20001f58        0x4 build/release/stm32f4xx_hal.o
+                0x20001f58                uwTick
  *(COMMON)
-                0x20000f5c                        . = ALIGN (0x4)
-                0x20000f5c                        _ebss = .
-                0x20000f5c                        __bss_end__ = _ebss
+                0x20001f5c                        . = ALIGN (0x4)
+                0x20001f5c                        _ebss = .
+                0x20001f5c                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000f5c      0x604 load address 0x0800351c
-                0x20000f60                        . = ALIGN (0x8)
- *fill*         0x20000f5c        0x4 
+                0x20001f5c      0x604 load address 0x0800451c
+                0x20001f60                        . = ALIGN (0x8)
+ *fill*         0x20001f5c        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x20000f60                        PROVIDE (_end = .)
-                0x20001160                        . = (. + _Min_Heap_Size)
- *fill*         0x20000f60      0x200 
-                0x20001560                        . = (. + _Min_Stack_Size)
- *fill*         0x20001160      0x400 
-                0x20001560                        . = ALIGN (0x8)
+                0x20001f60                        PROVIDE (_end = .)
+                0x20002160                        . = (. + _Min_Heap_Size)
+ *fill*         0x20001f60      0x200 
+                0x20002560                        . = (. + _Min_Stack_Size)
+ *fill*         0x20002160      0x400 
+                0x20002560                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)

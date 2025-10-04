@@ -9,43 +9,43 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   2 .rodata       00000068  08002660  08002660  00003660  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  080026c8  080026c8  00004e44  2**0
+  3 .ARM.extab    00000000  080026c8  080026c8  00005e44  2**0
                   CONTENTS, READONLY
   4 .ARM          00000008  080026c8  080026c8  000036c8  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .preinit_array 00000000  080026d0  080026d0  00004e44  2**0
+  5 .preinit_array 00000000  080026d0  080026d0  00005e44  2**0
                   CONTENTS, ALLOC, LOAD, DATA
   6 .init_array   00000004  080026d0  080026d0  000036d0  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   7 .fini_array   00000004  080026d4  080026d4  000036d4  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  8 .data         00000e44  20000000  080026d8  00004000  2**2
+  8 .data         00001e44  20000000  080026d8  00004000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          00000118  20000e44  0800351c  00004e44  2**2
+  9 .bss          00000118  20001e44  0800451c  00005e44  2**2
                   ALLOC
- 10 ._user_heap_stack 00000604  20000f5c  0800351c  00004f5c  2**0
+ 10 ._user_heap_stack 00000604  20001f5c  0800451c  00005f5c  2**0
                   ALLOC
- 11 .ARM.attributes 00000030  00000000  00000000  00004e44  2**0
+ 11 .ARM.attributes 00000030  00000000  00000000  00005e44  2**0
                   CONTENTS, READONLY
- 12 .comment      00000039  00000000  00000000  00004e74  2**0
+ 12 .comment      00000039  00000000  00000000  00005e74  2**0
                   CONTENTS, READONLY
- 13 .debug_line   000006bd  00000000  00000000  00004ead  2**0
+ 13 .debug_line   000006bd  00000000  00000000  00005ead  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_line_str 00000138  00000000  00000000  0000556a  2**0
+ 14 .debug_line_str 00000138  00000000  00000000  0000656a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_info   00000763  00000000  00000000  000056a2  2**0
+ 15 .debug_info   00000763  00000000  00000000  000066a2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_abbrev 000001a4  00000000  00000000  00005e05  2**0
+ 16 .debug_abbrev 000001a4  00000000  00000000  00006e05  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_aranges 00000060  00000000  00000000  00005fb0  2**3
+ 17 .debug_aranges 00000060  00000000  00000000  00006fb0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0000081d  00000000  00000000  00006010  2**0
+ 18 .debug_str    0000081d  00000000  00000000  00007010  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_frame  00000060  00000000  00000000  00006830  2**2
+ 19 .debug_frame  00000060  00000000  00000000  00007830  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_loclists 00000b15  00000000  00000000  00006890  2**0
+ 20 .debug_loclists 00000b15  00000000  00000000  00007890  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_rnglists 00000099  00000000  00000000  000073a5  2**0
+ 21 .debug_rnglists 00000099  00000000  00000000  000083a5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -84,7 +84,7 @@ Disassembly of section .text:
  800020a:	2301      	movs	r3, #1
  800020c:	7023      	strb	r3, [r4, #0]
  800020e:	bd10      	pop	{r4, pc}
- 8000210:	20000e44 	.word	0x20000e44
+ 8000210:	20001e44 	.word	0x20001e44
  8000214:	00000000 	.word	0x00000000
  8000218:	08002648 	.word	0x08002648
 
@@ -97,7 +97,7 @@ Disassembly of section .text:
  8000226:	f3af 8000 	nop.w
  800022a:	bd08      	pop	{r3, pc}
  800022c:	00000000 	.word	0x00000000
- 8000230:	20000e48 	.word	0x20000e48
+ 8000230:	20001e48 	.word	0x20001e48
  8000234:	08002648 	.word	0x08002648
 
 08000238 <delay>:
@@ -569,10 +569,10 @@ Disassembly of section .text:
  80006d4:	f7ff fe5e 	bl	8000394 <lcd_putstring>
  80006d8:	e7bf      	b.n	800065a <EXTI0_IRQHandler+0x16>
  80006da:	bf00      	nop
- 80006dc:	20000e64 	.word	0x20000e64
- 80006e0:	20000f10 	.word	0x20000f10
- 80006e4:	20000e68 	.word	0x20000e68
- 80006e8:	20000e60 	.word	0x20000e60
+ 80006dc:	20001e64 	.word	0x20001e64
+ 80006e0:	20001f10 	.word	0x20001f10
+ 80006e4:	20001e68 	.word	0x20001e68
+ 80006e8:	20001e60 	.word	0x20001e60
  80006ec:	2aaaaaab 	.word	0x2aaaaaab
  80006f0:	20000030 	.word	0x20000030
  80006f4:	20000018 	.word	0x20000018
@@ -690,10 +690,10 @@ Disassembly of section .text:
  80007fe:	f7ff ff81 	bl	8000704 <Error_Handler>
  8000802:	f7ff ff7f 	bl	8000704 <Error_Handler>
  8000806:	bf00      	nop
- 8000808:	20000f10 	.word	0x20000f10
+ 8000808:	20001f10 	.word	0x20001f10
  800080c:	20000034 	.word	0x20000034
  8000810:	40023800 	.word	0x40023800
- 8000814:	20000e68 	.word	0x20000e68
+ 8000814:	20001e68 	.word	0x20001e68
  8000818:	40026088 	.word	0x40026088
 
 0800081c <MX_TIM3_Init>:
@@ -761,7 +761,7 @@ Disassembly of section .text:
  80008ae:	f7ff ff29 	bl	8000704 <Error_Handler>
  80008b2:	f7ff ff27 	bl	8000704 <Error_Handler>
  80008b6:	bf00      	nop
- 80008b8:	20000ec8 	.word	0x20000ec8
+ 80008b8:	20001ec8 	.word	0x20001ec8
  80008bc:	40000400 	.word	0x40000400
 
 080008c0 <SystemClock_Config>:
@@ -861,11 +861,11 @@ Disassembly of section .text:
  80009ac:	f443 7300 	orr.w	r3, r3, #512	@ 0x200
  80009b0:	60d3      	str	r3, [r2, #12]
  80009b2:	e7fe      	b.n	80009b2 <main+0x66>
- 80009b4:	20000ec8 	.word	0x20000ec8
- 80009b8:	20000f10 	.word	0x20000f10
+ 80009b4:	20001ec8 	.word	0x20001ec8
+ 80009b8:	20001f10 	.word	0x20001f10
  80009bc:	20000030 	.word	0x20000030
- 80009c0:	20000c38 	.word	0x20000c38
- 80009c4:	20000e68 	.word	0x20000e68
+ 80009c0:	20001c38 	.word	0x20001c38
+ 80009c4:	20001e68 	.word	0x20001e68
  80009c8:	0800266c 	.word	0x0800266c
  80009cc:	08002678 	.word	0x08002678
 
@@ -896,9 +896,9 @@ Disassembly of section .text:
  8000a0a:	2001      	movs	r0, #1
  8000a0c:	bd10      	pop	{r4, pc}
  8000a0e:	bf00      	nop
- 8000a10:	20000e38 	.word	0x20000e38
- 8000a14:	20000e40 	.word	0x20000e40
- 8000a18:	20000e3c 	.word	0x20000e3c
+ 8000a10:	20001e38 	.word	0x20001e38
+ 8000a14:	20001e40 	.word	0x20001e40
+ 8000a18:	20001e3c 	.word	0x20001e3c
 
 08000a1c <HAL_Init>:
  8000a1c:	b508      	push	{r3, lr}
@@ -930,15 +930,15 @@ Disassembly of section .text:
  8000a5a:	6013      	str	r3, [r2, #0]
  8000a5c:	4770      	bx	lr
  8000a5e:	bf00      	nop
- 8000a60:	20000f58 	.word	0x20000f58
- 8000a64:	20000e38 	.word	0x20000e38
+ 8000a60:	20001f58 	.word	0x20001f58
+ 8000a64:	20001e38 	.word	0x20001e38
 
 08000a68 <HAL_GetTick>:
  8000a68:	4b01      	ldr	r3, [pc, #4]	@ (8000a70 <HAL_GetTick+0x8>)
  8000a6a:	6818      	ldr	r0, [r3, #0]
  8000a6c:	4770      	bx	lr
  8000a6e:	bf00      	nop
- 8000a70:	20000f58 	.word	0x20000f58
+ 8000a70:	20001f58 	.word	0x20001f58
 
 08000a74 <__NVIC_EnableIRQ>:
  8000a74:	2800      	cmp	r0, #0
@@ -1517,7 +1517,7 @@ Disassembly of section .text:
  8000f8a:	b003      	add	sp, #12
  8000f8c:	bdf0      	pop	{r4, r5, r6, r7, pc}
  8000f8e:	bf00      	nop
- 8000f90:	20000e40 	.word	0x20000e40
+ 8000f90:	20001e40 	.word	0x20001e40
  8000f94:	1b4e81b5 	.word	0x1b4e81b5
 
 08000f98 <HAL_GPIO_Init>:
@@ -1814,7 +1814,7 @@ Disassembly of section .text:
  8001262:	bf00      	nop
  8001264:	40000400 	.word	0x40000400
  8001268:	40023800 	.word	0x40023800
- 800126c:	20000e68 	.word	0x20000e68
+ 800126c:	20001e68 	.word	0x20001e68
  8001270:	40026088 	.word	0x40026088
 
 08001274 <HAL_TIM_MspPostInit>:
@@ -1996,8 +1996,8 @@ Disassembly of section .text:
  8001418:	40023c00 	.word	0x40023c00
  800141c:	40023800 	.word	0x40023800
  8001420:	080026b8 	.word	0x080026b8
- 8001424:	20000e40 	.word	0x20000e40
- 8001428:	20000e3c 	.word	0x20000e3c
+ 8001424:	20001e40 	.word	0x20001e40
+ 8001428:	20001e3c 	.word	0x20001e3c
 
 0800142c <HAL_RCC_GetSysClockFreq>:
  800142c:	b508      	push	{r3, lr}
@@ -3501,7 +3501,7 @@ Disassembly of section .text:
  8002284:	f7fe fd9a 	bl	8000dbc <HAL_DMA_IRQHandler>
  8002288:	bd08      	pop	{r3, pc}
  800228a:	bf00      	nop
- 800228c:	20000e68 	.word	0x20000e68
+ 800228c:	20001e68 	.word	0x20001e68
 
 08002290 <SystemInit>:
  8002290:	4a03      	ldr	r2, [pc, #12]	@ (80022a0 <SystemInit+0x10>)
@@ -3546,10 +3546,10 @@ Disassembly of section .text:
  80022da:	4770      	bx	lr
  80022dc:	20020000 	.word	0x20020000
  80022e0:	20000000 	.word	0x20000000
- 80022e4:	20000e44 	.word	0x20000e44
+ 80022e4:	20001e44 	.word	0x20001e44
  80022e8:	080026d8 	.word	0x080026d8
- 80022ec:	20000e44 	.word	0x20000e44
- 80022f0:	20000f5c 	.word	0x20000f5c
+ 80022ec:	20001e44 	.word	0x20001e44
+ 80022f0:	20001f5c 	.word	0x20001f5c
 
 080022f4 <ADC_IRQHandler>:
  80022f4:	e7fe      	b.n	80022f4 <ADC_IRQHandler>
