@@ -1,0 +1,1643 @@
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"main.c"
+  16              		.text
+  17              		.section	.text.MX_GPIO_Init,"ax",%progbits
+  18              		.align	1
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  23              	MX_GPIO_Init:
+  24              		@ args = 0, pretend = 0, frame = 32
+  25              		@ frame_needed = 0, uses_anonymous_args = 0
+  26 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+  27 0004 89B0     		sub	sp, sp, #36
+  28 0006 03AD     		add	r5, sp, #12
+  29 0008 0024     		movs	r4, #0
+  30 000a 0394     		str	r4, [sp, #12]
+  31 000c 0494     		str	r4, [sp, #16]
+  32 000e 0594     		str	r4, [sp, #20]
+  33 0010 0694     		str	r4, [sp, #24]
+  34 0012 0794     		str	r4, [sp, #28]
+  35 0014 0094     		str	r4, [sp]
+  36 0016 2F4B     		ldr	r3, .L3
+  37 0018 1A6B     		ldr	r2, [r3, #48]
+  38 001a 42F08002 		orr	r2, r2, #128
+  39 001e 1A63     		str	r2, [r3, #48]
+  40 0020 1A6B     		ldr	r2, [r3, #48]
+  41 0022 02F08002 		and	r2, r2, #128
+  42 0026 0092     		str	r2, [sp]
+  43 0028 009A     		ldr	r2, [sp]
+  44 002a 0194     		str	r4, [sp, #4]
+  45 002c 1A6B     		ldr	r2, [r3, #48]
+  46 002e 42F00102 		orr	r2, r2, #1
+  47 0032 1A63     		str	r2, [r3, #48]
+  48 0034 1A6B     		ldr	r2, [r3, #48]
+  49 0036 02F00102 		and	r2, r2, #1
+  50 003a 0192     		str	r2, [sp, #4]
+  51 003c 019A     		ldr	r2, [sp, #4]
+  52 003e 0294     		str	r4, [sp, #8]
+  53 0040 1A6B     		ldr	r2, [r3, #48]
+  54 0042 42F00202 		orr	r2, r2, #2
+  55 0046 1A63     		str	r2, [r3, #48]
+  56 0048 1B6B     		ldr	r3, [r3, #48]
+  57 004a 03F00203 		and	r3, r3, #2
+  58 004e 0293     		str	r3, [sp, #8]
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 2
+
+
+  59 0050 029B     		ldr	r3, [sp, #8]
+  60 0052 4FF4404B 		mov	fp, #49152
+  61 0056 CDF80CB0 		str	fp, [sp, #12]
+  62 005a 0127     		movs	r7, #1
+  63 005c 0497     		str	r7, [sp, #16]
+  64 005e DFF880A0 		ldr	r10, .L3+12
+  65 0062 2946     		mov	r1, r5
+  66 0064 5046     		mov	r0, r10
+  67 0066 FFF7FEFF 		bl	HAL_GPIO_Init
+  68 006a 4FF44079 		mov	r9, #768
+  69 006e CDF80C90 		str	r9, [sp, #12]
+  70 0072 2946     		mov	r1, r5
+  71 0074 1848     		ldr	r0, .L3+4
+  72 0076 FFF7FEFF 		bl	HAL_GPIO_Init
+  73 007a 4FF41048 		mov	r8, #36864
+  74 007e CDF80C80 		str	r8, [sp, #12]
+  75 0082 164E     		ldr	r6, .L3+8
+  76 0084 2946     		mov	r1, r5
+  77 0086 3046     		mov	r0, r6
+  78 0088 FFF7FEFF 		bl	HAL_GPIO_Init
+  79 008c 2246     		mov	r2, r4
+  80 008e 5946     		mov	r1, fp
+  81 0090 5046     		mov	r0, r10
+  82 0092 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  83 0096 2246     		mov	r2, r4
+  84 0098 4946     		mov	r1, r9
+  85 009a 0F48     		ldr	r0, .L3+4
+  86 009c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  87 00a0 2246     		mov	r2, r4
+  88 00a2 4146     		mov	r1, r8
+  89 00a4 3046     		mov	r0, r6
+  90 00a6 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  91 00aa 0397     		str	r7, [sp, #12]
+  92 00ac 4FF48813 		mov	r3, #1114112
+  93 00b0 0493     		str	r3, [sp, #16]
+  94 00b2 0597     		str	r7, [sp, #20]
+  95 00b4 2946     		mov	r1, r5
+  96 00b6 3046     		mov	r0, r6
+  97 00b8 FFF7FEFF 		bl	HAL_GPIO_Init
+  98 00bc 2246     		mov	r2, r4
+  99 00be 0221     		movs	r1, #2
+ 100 00c0 0620     		movs	r0, #6
+ 101 00c2 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 102 00c6 0620     		movs	r0, #6
+ 103 00c8 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 104 00cc 09B0     		add	sp, sp, #36
+ 105              		@ sp needed
+ 106 00ce BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 107              	.L4:
+ 108 00d2 00BF     		.align	2
+ 109              	.L3:
+ 110 00d4 00380240 		.word	1073887232
+ 111 00d8 00040240 		.word	1073873920
+ 112 00dc 00000240 		.word	1073872896
+ 113 00e0 00080240 		.word	1073874944
+ 115              		.section	.text.MX_DMA_Init,"ax",%progbits
+ 116              		.align	1
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 3
+
+
+ 117              		.syntax unified
+ 118              		.thumb
+ 119              		.thumb_func
+ 121              	MX_DMA_Init:
+ 122              		@ args = 0, pretend = 0, frame = 8
+ 123              		@ frame_needed = 0, uses_anonymous_args = 0
+ 124 0000 00B5     		push	{lr}
+ 125 0002 83B0     		sub	sp, sp, #12
+ 126 0004 0021     		movs	r1, #0
+ 127 0006 0191     		str	r1, [sp, #4]
+ 128 0008 094B     		ldr	r3, .L7
+ 129 000a 1A6B     		ldr	r2, [r3, #48]
+ 130 000c 42F40012 		orr	r2, r2, #2097152
+ 131 0010 1A63     		str	r2, [r3, #48]
+ 132 0012 1B6B     		ldr	r3, [r3, #48]
+ 133 0014 03F40013 		and	r3, r3, #2097152
+ 134 0018 0193     		str	r3, [sp, #4]
+ 135 001a 019B     		ldr	r3, [sp, #4]
+ 136 001c 0A46     		mov	r2, r1
+ 137 001e 1020     		movs	r0, #16
+ 138 0020 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 139 0024 1020     		movs	r0, #16
+ 140 0026 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 141 002a 03B0     		add	sp, sp, #12
+ 142              		@ sp needed
+ 143 002c 5DF804FB 		ldr	pc, [sp], #4
+ 144              	.L8:
+ 145              		.align	2
+ 146              	.L7:
+ 147 0030 00380240 		.word	1073887232
+ 149              		.section	.rodata.EXTI0_IRQHandler.str1.4,"aMS",%progbits,1
+ 150              		.align	2
+ 151              	.LC0:
+ 152 0000 57617665 		.ascii	"Waveform:\000"
+ 152      666F726D 
+ 152      3A00
+ 153              		.section	.text.EXTI0_IRQHandler,"ax",%progbits
+ 154              		.align	1
+ 155              		.global	EXTI0_IRQHandler
+ 156              		.syntax unified
+ 157              		.thumb
+ 158              		.thumb_func
+ 160              	EXTI0_IRQHandler:
+ 161              		@ args = 0, pretend = 0, frame = 0
+ 162              		@ frame_needed = 0, uses_anonymous_args = 0
+ 163 0000 70B5     		push	{r4, r5, r6, lr}
+ 164 0002 0120     		movs	r0, #1
+ 165 0004 FFF7FEFF 		bl	HAL_GPIO_EXTI_IRQHandler
+ 166 0008 FFF7FEFF 		bl	HAL_GetTick
+ 167 000c 224B     		ldr	r3, .L13
+ 168 000e 1B68     		ldr	r3, [r3]
+ 169 0010 C31A     		subs	r3, r0, r3
+ 170 0012 C82B     		cmp	r3, #200
+ 171 0014 00D8     		bhi	.L12
+ 172              	.L9:
+ 173 0016 70BD     		pop	{r4, r5, r6, pc}
+ 174              	.L12:
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 4
+
+
+ 175 0018 1F4B     		ldr	r3, .L13
+ 176 001a 1860     		str	r0, [r3]
+ 177 001c 1F4D     		ldr	r5, .L13+4
+ 178 001e 2A68     		ldr	r2, [r5]
+ 179 0020 D368     		ldr	r3, [r2, #12]
+ 180 0022 23F40073 		bic	r3, r3, #512
+ 181 0026 D360     		str	r3, [r2, #12]
+ 182 0028 1D4E     		ldr	r6, .L13+8
+ 183 002a 3046     		mov	r0, r6
+ 184 002c FFF7FEFF 		bl	HAL_DMA_Abort_IT
+ 185 0030 1C4C     		ldr	r4, .L13+12
+ 186 0032 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 187 0034 0133     		adds	r3, r3, #1
+ 188 0036 1C4A     		ldr	r2, .L13+16
+ 189 0038 82FB0312 		smull	r1, r2, r2, r3
+ 190 003c 02EB4202 		add	r2, r2, r2, lsl #1
+ 191 0040 A3EB4203 		sub	r3, r3, r2, lsl #1
+ 192 0044 DBB2     		uxtb	r3, r3
+ 193 0046 2370     		strb	r3, [r4]
+ 194 0048 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
+ 195 004a 2A68     		ldr	r2, [r5]
+ 196 004c 8023     		movs	r3, #128
+ 197 004e 3432     		adds	r2, r2, #52
+ 198 0050 1649     		ldr	r1, .L13+20
+ 199 0052 51F82010 		ldr	r1, [r1, r0, lsl #2]
+ 200 0056 3046     		mov	r0, r6
+ 201 0058 FFF7FEFF 		bl	HAL_DMA_Start_IT
+ 202 005c 2A68     		ldr	r2, [r5]
+ 203 005e D368     		ldr	r3, [r2, #12]
+ 204 0060 43F40073 		orr	r3, r3, #512
+ 205 0064 D360     		str	r3, [r2, #12]
+ 206 0066 0122     		movs	r2, #1
+ 207 0068 2021     		movs	r1, #32
+ 208 006a 1148     		ldr	r0, .L13+24
+ 209 006c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 210 0070 0120     		movs	r0, #1
+ 211 0072 FFF7FEFF 		bl	lcd_command
+ 212 0076 0220     		movs	r0, #2
+ 213 0078 FFF7FEFF 		bl	lcd_command
+ 214 007c 0D48     		ldr	r0, .L13+28
+ 215 007e FFF7FEFF 		bl	lcd_putstring
+ 216 0082 C020     		movs	r0, #192
+ 217 0084 FFF7FEFF 		bl	lcd_command
+ 218 0088 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
+ 219 008a 0B4B     		ldr	r3, .L13+32
+ 220 008c 53F82200 		ldr	r0, [r3, r2, lsl #2]
+ 221 0090 FFF7FEFF 		bl	lcd_putstring
+ 222 0094 BFE7     		b	.L9
+ 223              	.L14:
+ 224 0096 00BF     		.align	2
+ 225              	.L13:
+ 226 0098 00000000 		.word	lastDebounceTick
+ 227 009c 00000000 		.word	htim2
+ 228 00a0 00000000 		.word	hdma_tim2_ch1
+ 229 00a4 00000000 		.word	currentWave
+ 230 00a8 ABAAAA2A 		.word	715827883
+ 231 00ac 00000000 		.word	waveforms
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 5
+
+
+ 232 00b0 00000240 		.word	1073872896
+ 233 00b4 00000000 		.word	.LC0
+ 234 00b8 00000000 		.word	waveNames
+ 236              		.section	.text.Error_Handler,"ax",%progbits
+ 237              		.align	1
+ 238              		.global	Error_Handler
+ 239              		.syntax unified
+ 240              		.thumb
+ 241              		.thumb_func
+ 243              	Error_Handler:
+ 244              		@ Volatile: function does not return.
+ 245              		@ args = 0, pretend = 0, frame = 0
+ 246              		@ frame_needed = 0, uses_anonymous_args = 0
+ 247              		@ link register save eliminated.
+ 248              		.syntax unified
+ 249              	@ 962 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 250 0000 72B6     		cpsid i
+ 251              	@ 0 "" 2
+ 252              		.thumb
+ 253              		.syntax unified
+ 254              	.L16:
+ 255 0002 FEE7     		b	.L16
+ 257              		.section	.text.MX_TIM2_Init,"ax",%progbits
+ 258              		.align	1
+ 259              		.syntax unified
+ 260              		.thumb
+ 261              		.thumb_func
+ 263              	MX_TIM2_Init:
+ 264              		@ args = 0, pretend = 0, frame = 56
+ 265              		@ frame_needed = 0, uses_anonymous_args = 0
+ 266 0000 00B5     		push	{lr}
+ 267 0002 8FB0     		sub	sp, sp, #60
+ 268 0004 0023     		movs	r3, #0
+ 269 0006 0A93     		str	r3, [sp, #40]
+ 270 0008 0B93     		str	r3, [sp, #44]
+ 271 000a 0C93     		str	r3, [sp, #48]
+ 272 000c 0D93     		str	r3, [sp, #52]
+ 273 000e 0893     		str	r3, [sp, #32]
+ 274 0010 0993     		str	r3, [sp, #36]
+ 275 0012 0193     		str	r3, [sp, #4]
+ 276 0014 0293     		str	r3, [sp, #8]
+ 277 0016 0393     		str	r3, [sp, #12]
+ 278 0018 0493     		str	r3, [sp, #16]
+ 279 001a 0593     		str	r3, [sp, #20]
+ 280 001c 0693     		str	r3, [sp, #24]
+ 281 001e 0793     		str	r3, [sp, #28]
+ 282 0020 3548     		ldr	r0, .L31
+ 283 0022 4FF08042 		mov	r2, #1073741824
+ 284 0026 0260     		str	r2, [r0]
+ 285 0028 4360     		str	r3, [r0, #4]
+ 286 002a 8360     		str	r3, [r0, #8]
+ 287 002c 4FF0FF32 		mov	r2, #-1
+ 288 0030 C260     		str	r2, [r0, #12]
+ 289 0032 0361     		str	r3, [r0, #16]
+ 290 0034 8361     		str	r3, [r0, #24]
+ 291 0036 FFF7FEFF 		bl	HAL_TIM_Base_Init
+ 292 003a 0028     		cmp	r0, #0
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 6
+
+
+ 293 003c 50D1     		bne	.L25
+ 294 003e 4FF48053 		mov	r3, #4096
+ 295 0042 0A93     		str	r3, [sp, #40]
+ 296 0044 0AA9     		add	r1, sp, #40
+ 297 0046 2C48     		ldr	r0, .L31
+ 298 0048 FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
+ 299 004c 0028     		cmp	r0, #0
+ 300 004e 49D1     		bne	.L26
+ 301 0050 2948     		ldr	r0, .L31
+ 302 0052 FFF7FEFF 		bl	HAL_TIM_OC_Init
+ 303 0056 0028     		cmp	r0, #0
+ 304 0058 46D1     		bne	.L27
+ 305 005a 0023     		movs	r3, #0
+ 306 005c 0893     		str	r3, [sp, #32]
+ 307 005e 0993     		str	r3, [sp, #36]
+ 308 0060 08A9     		add	r1, sp, #32
+ 309 0062 2548     		ldr	r0, .L31
+ 310 0064 FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
+ 311 0068 0028     		cmp	r0, #0
+ 312 006a 3FD1     		bne	.L28
+ 313 006c 0022     		movs	r2, #0
+ 314 006e 0192     		str	r2, [sp, #4]
+ 315 0070 0292     		str	r2, [sp, #8]
+ 316 0072 0392     		str	r2, [sp, #12]
+ 317 0074 0592     		str	r2, [sp, #20]
+ 318 0076 01A9     		add	r1, sp, #4
+ 319 0078 1F48     		ldr	r0, .L31
+ 320 007a FFF7FEFF 		bl	HAL_TIM_OC_ConfigChannel
+ 321 007e 0028     		cmp	r0, #0
+ 322 0080 36D1     		bne	.L29
+ 323 0082 0023     		movs	r3, #0
+ 324 0084 0093     		str	r3, [sp]
+ 325 0086 1D4A     		ldr	r2, .L31+4
+ 326 0088 116B     		ldr	r1, [r2, #48]
+ 327 008a 41F40011 		orr	r1, r1, #2097152
+ 328 008e 1163     		str	r1, [r2, #48]
+ 329 0090 126B     		ldr	r2, [r2, #48]
+ 330 0092 02F40012 		and	r2, r2, #2097152
+ 331 0096 0092     		str	r2, [sp]
+ 332 0098 009A     		ldr	r2, [sp]
+ 333 009a 1948     		ldr	r0, .L31+8
+ 334 009c 194A     		ldr	r2, .L31+12
+ 335 009e 0260     		str	r2, [r0]
+ 336 00a0 4FF0C062 		mov	r2, #100663296
+ 337 00a4 4260     		str	r2, [r0, #4]
+ 338 00a6 4022     		movs	r2, #64
+ 339 00a8 8260     		str	r2, [r0, #8]
+ 340 00aa C360     		str	r3, [r0, #12]
+ 341 00ac 4FF48062 		mov	r2, #1024
+ 342 00b0 0261     		str	r2, [r0, #16]
+ 343 00b2 4FF48052 		mov	r2, #4096
+ 344 00b6 4261     		str	r2, [r0, #20]
+ 345 00b8 4FF48042 		mov	r2, #16384
+ 346 00bc 8261     		str	r2, [r0, #24]
+ 347 00be 4FF48072 		mov	r2, #256
+ 348 00c2 C261     		str	r2, [r0, #28]
+ 349 00c4 4FF40032 		mov	r2, #131072
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 7
+
+
+ 350 00c8 0262     		str	r2, [r0, #32]
+ 351 00ca 4362     		str	r3, [r0, #36]
+ 352 00cc FFF7FEFF 		bl	HAL_DMA_Init
+ 353 00d0 80B9     		cbnz	r0, .L30
+ 354 00d2 094A     		ldr	r2, .L31
+ 355 00d4 0A4B     		ldr	r3, .L31+8
+ 356 00d6 5362     		str	r3, [r2, #36]
+ 357 00d8 9A63     		str	r2, [r3, #56]
+ 358 00da 0FB0     		add	sp, sp, #60
+ 359              		@ sp needed
+ 360 00dc 5DF804FB 		ldr	pc, [sp], #4
+ 361              	.L25:
+ 362 00e0 FFF7FEFF 		bl	Error_Handler
+ 363              	.L26:
+ 364 00e4 FFF7FEFF 		bl	Error_Handler
+ 365              	.L27:
+ 366 00e8 FFF7FEFF 		bl	Error_Handler
+ 367              	.L28:
+ 368 00ec FFF7FEFF 		bl	Error_Handler
+ 369              	.L29:
+ 370 00f0 FFF7FEFF 		bl	Error_Handler
+ 371              	.L30:
+ 372 00f4 FFF7FEFF 		bl	Error_Handler
+ 373              	.L32:
+ 374              		.align	2
+ 375              	.L31:
+ 376 00f8 00000000 		.word	htim2
+ 377 00fc 00380240 		.word	1073887232
+ 378 0100 00000000 		.word	hdma_tim2_ch1
+ 379 0104 88600240 		.word	1073897608
+ 381              		.section	.text.MX_TIM3_Init,"ax",%progbits
+ 382              		.align	1
+ 383              		.syntax unified
+ 384              		.thumb
+ 385              		.thumb_func
+ 387              	MX_TIM3_Init:
+ 388              		@ args = 0, pretend = 0, frame = 56
+ 389              		@ frame_needed = 0, uses_anonymous_args = 0
+ 390 0000 00B5     		push	{lr}
+ 391 0002 8FB0     		sub	sp, sp, #60
+ 392 0004 0023     		movs	r3, #0
+ 393 0006 0A93     		str	r3, [sp, #40]
+ 394 0008 0B93     		str	r3, [sp, #44]
+ 395 000a 0C93     		str	r3, [sp, #48]
+ 396 000c 0D93     		str	r3, [sp, #52]
+ 397 000e 0893     		str	r3, [sp, #32]
+ 398 0010 0993     		str	r3, [sp, #36]
+ 399 0012 0193     		str	r3, [sp, #4]
+ 400 0014 0293     		str	r3, [sp, #8]
+ 401 0016 0393     		str	r3, [sp, #12]
+ 402 0018 0493     		str	r3, [sp, #16]
+ 403 001a 0593     		str	r3, [sp, #20]
+ 404 001c 0693     		str	r3, [sp, #24]
+ 405 001e 0793     		str	r3, [sp, #28]
+ 406 0020 1E48     		ldr	r0, .L45
+ 407 0022 1F4A     		ldr	r2, .L45+4
+ 408 0024 0260     		str	r2, [r0]
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 8
+
+
+ 409 0026 4360     		str	r3, [r0, #4]
+ 410 0028 8360     		str	r3, [r0, #8]
+ 411 002a 4FF6FF72 		movw	r2, #65535
+ 412 002e C260     		str	r2, [r0, #12]
+ 413 0030 0361     		str	r3, [r0, #16]
+ 414 0032 8361     		str	r3, [r0, #24]
+ 415 0034 FFF7FEFF 		bl	HAL_TIM_Base_Init
+ 416 0038 28BB     		cbnz	r0, .L40
+ 417 003a 4FF48053 		mov	r3, #4096
+ 418 003e 0A93     		str	r3, [sp, #40]
+ 419 0040 0AA9     		add	r1, sp, #40
+ 420 0042 1648     		ldr	r0, .L45
+ 421 0044 FFF7FEFF 		bl	HAL_TIM_ConfigClockSource
+ 422 0048 F8B9     		cbnz	r0, .L41
+ 423 004a 1448     		ldr	r0, .L45
+ 424 004c FFF7FEFF 		bl	HAL_TIM_PWM_Init
+ 425 0050 E8B9     		cbnz	r0, .L42
+ 426 0052 0023     		movs	r3, #0
+ 427 0054 0893     		str	r3, [sp, #32]
+ 428 0056 0993     		str	r3, [sp, #36]
+ 429 0058 08A9     		add	r1, sp, #32
+ 430 005a 1048     		ldr	r0, .L45
+ 431 005c FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
+ 432 0060 B8B9     		cbnz	r0, .L43
+ 433 0062 6023     		movs	r3, #96
+ 434 0064 0193     		str	r3, [sp, #4]
+ 435 0066 0023     		movs	r3, #0
+ 436 0068 0293     		str	r3, [sp, #8]
+ 437 006a 0393     		str	r3, [sp, #12]
+ 438 006c 0593     		str	r3, [sp, #20]
+ 439 006e 0822     		movs	r2, #8
+ 440 0070 01A9     		add	r1, sp, #4
+ 441 0072 0A48     		ldr	r0, .L45
+ 442 0074 FFF7FEFF 		bl	HAL_TIM_PWM_ConfigChannel
+ 443 0078 68B9     		cbnz	r0, .L44
+ 444 007a 0848     		ldr	r0, .L45
+ 445 007c FFF7FEFF 		bl	HAL_TIM_MspPostInit
+ 446 0080 0FB0     		add	sp, sp, #60
+ 447              		@ sp needed
+ 448 0082 5DF804FB 		ldr	pc, [sp], #4
+ 449              	.L40:
+ 450 0086 FFF7FEFF 		bl	Error_Handler
+ 451              	.L41:
+ 452 008a FFF7FEFF 		bl	Error_Handler
+ 453              	.L42:
+ 454 008e FFF7FEFF 		bl	Error_Handler
+ 455              	.L43:
+ 456 0092 FFF7FEFF 		bl	Error_Handler
+ 457              	.L44:
+ 458 0096 FFF7FEFF 		bl	Error_Handler
+ 459              	.L46:
+ 460 009a 00BF     		.align	2
+ 461              	.L45:
+ 462 009c 00000000 		.word	htim3
+ 463 00a0 00040040 		.word	1073742848
+ 465              		.section	.text.SystemClock_Config,"ax",%progbits
+ 466              		.align	1
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 9
+
+
+ 467              		.global	SystemClock_Config
+ 468              		.syntax unified
+ 469              		.thumb
+ 470              		.thumb_func
+ 472              	SystemClock_Config:
+ 473              		@ args = 0, pretend = 0, frame = 80
+ 474              		@ frame_needed = 0, uses_anonymous_args = 0
+ 475 0000 10B5     		push	{r4, lr}
+ 476 0002 94B0     		sub	sp, sp, #80
+ 477 0004 07AC     		add	r4, sp, #28
+ 478 0006 3422     		movs	r2, #52
+ 479 0008 0021     		movs	r1, #0
+ 480 000a 2046     		mov	r0, r4
+ 481 000c FFF7FEFF 		bl	memset
+ 482 0010 0023     		movs	r3, #0
+ 483 0012 0293     		str	r3, [sp, #8]
+ 484 0014 0393     		str	r3, [sp, #12]
+ 485 0016 0493     		str	r3, [sp, #16]
+ 486 0018 0593     		str	r3, [sp, #20]
+ 487 001a 0693     		str	r3, [sp, #24]
+ 488 001c 0093     		str	r3, [sp]
+ 489 001e 194A     		ldr	r2, .L53
+ 490 0020 116C     		ldr	r1, [r2, #64]
+ 491 0022 41F08051 		orr	r1, r1, #268435456
+ 492 0026 1164     		str	r1, [r2, #64]
+ 493 0028 126C     		ldr	r2, [r2, #64]
+ 494 002a 02F08052 		and	r2, r2, #268435456
+ 495 002e 0092     		str	r2, [sp]
+ 496 0030 009A     		ldr	r2, [sp]
+ 497 0032 0193     		str	r3, [sp, #4]
+ 498 0034 1449     		ldr	r1, .L53+4
+ 499 0036 0A68     		ldr	r2, [r1]
+ 500 0038 22F44042 		bic	r2, r2, #49152
+ 501 003c 42F48042 		orr	r2, r2, #16384
+ 502 0040 0A60     		str	r2, [r1]
+ 503 0042 0A68     		ldr	r2, [r1]
+ 504 0044 02F44042 		and	r2, r2, #49152
+ 505 0048 0192     		str	r2, [sp, #4]
+ 506 004a 019A     		ldr	r2, [sp, #4]
+ 507 004c 0222     		movs	r2, #2
+ 508 004e 0792     		str	r2, [sp, #28]
+ 509 0050 0122     		movs	r2, #1
+ 510 0052 0A92     		str	r2, [sp, #40]
+ 511 0054 1022     		movs	r2, #16
+ 512 0056 0B92     		str	r2, [sp, #44]
+ 513 0058 0D93     		str	r3, [sp, #52]
+ 514 005a 2046     		mov	r0, r4
+ 515 005c FFF7FEFF 		bl	HAL_RCC_OscConfig
+ 516 0060 60B9     		cbnz	r0, .L51
+ 517 0062 0F23     		movs	r3, #15
+ 518 0064 0293     		str	r3, [sp, #8]
+ 519 0066 0021     		movs	r1, #0
+ 520 0068 0391     		str	r1, [sp, #12]
+ 521 006a 0491     		str	r1, [sp, #16]
+ 522 006c 0591     		str	r1, [sp, #20]
+ 523 006e 0691     		str	r1, [sp, #24]
+ 524 0070 02A8     		add	r0, sp, #8
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 10
+
+
+ 525 0072 FFF7FEFF 		bl	HAL_RCC_ClockConfig
+ 526 0076 18B9     		cbnz	r0, .L52
+ 527 0078 14B0     		add	sp, sp, #80
+ 528              		@ sp needed
+ 529 007a 10BD     		pop	{r4, pc}
+ 530              	.L51:
+ 531 007c FFF7FEFF 		bl	Error_Handler
+ 532              	.L52:
+ 533 0080 FFF7FEFF 		bl	Error_Handler
+ 534              	.L54:
+ 535              		.align	2
+ 536              	.L53:
+ 537 0084 00380240 		.word	1073887232
+ 538 0088 00700040 		.word	1073770496
+ 540              		.section	.rodata.main.str1.4,"aMS",%progbits,1
+ 541              		.align	2
+ 542              	.LC1:
+ 543 0000 57617665 		.ascii	"Waveform: \000"
+ 543      666F726D 
+ 543      3A2000
+ 544              		.section	.text.main,"ax",%progbits
+ 545              		.align	1
+ 546              		.global	main
+ 547              		.syntax unified
+ 548              		.thumb
+ 549              		.thumb_func
+ 551              	main:
+ 552              		@ Volatile: function does not return.
+ 553              		@ args = 0, pretend = 0, frame = 0
+ 554              		@ frame_needed = 0, uses_anonymous_args = 0
+ 555 0000 08B5     		push	{r3, lr}
+ 556 0002 FFF7FEFF 		bl	HAL_Init
+ 557 0006 FFF7FEFF 		bl	SystemClock_Config
+ 558 000a FFF7FEFF 		bl	MX_GPIO_Init
+ 559 000e FFF7FEFF 		bl	MX_DMA_Init
+ 560 0012 FFF7FEFF 		bl	MX_TIM2_Init
+ 561 0016 FFF7FEFF 		bl	MX_TIM3_Init
+ 562 001a 0821     		movs	r1, #8
+ 563 001c 1148     		ldr	r0, .L58
+ 564 001e FFF7FEFF 		bl	HAL_TIM_PWM_Start
+ 565 0022 114C     		ldr	r4, .L58+4
+ 566 0024 0021     		movs	r1, #0
+ 567 0026 2046     		mov	r0, r4
+ 568 0028 FFF7FEFF 		bl	HAL_TIM_OC_Start
+ 569 002c 8023     		movs	r3, #128
+ 570 002e 0F4A     		ldr	r2, .L58+8
+ 571 0030 1268     		ldr	r2, [r2]
+ 572 0032 0F49     		ldr	r1, .L58+12
+ 573 0034 0F48     		ldr	r0, .L58+16
+ 574 0036 FFF7FEFF 		bl	HAL_DMA_Start_IT
+ 575 003a FFF7FEFF 		bl	init_LCD
+ 576 003e 0120     		movs	r0, #1
+ 577 0040 FFF7FEFF 		bl	lcd_command
+ 578 0044 0220     		movs	r0, #2
+ 579 0046 FFF7FEFF 		bl	lcd_command
+ 580 004a 0B48     		ldr	r0, .L58+20
+ 581 004c FFF7FEFF 		bl	lcd_putstring
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 11
+
+
+ 582 0050 C020     		movs	r0, #192
+ 583 0052 FFF7FEFF 		bl	lcd_command
+ 584 0056 2268     		ldr	r2, [r4]
+ 585 0058 D368     		ldr	r3, [r2, #12]
+ 586 005a 43F40073 		orr	r3, r3, #512
+ 587 005e D360     		str	r3, [r2, #12]
+ 588              	.L56:
+ 589 0060 FEE7     		b	.L56
+ 590              	.L59:
+ 591 0062 00BF     		.align	2
+ 592              	.L58:
+ 593 0064 00000000 		.word	htim3
+ 594 0068 00000000 		.word	htim2
+ 595 006c 00000000 		.word	DestAddress
+ 596 0070 00000000 		.word	Sin_LUT
+ 597 0074 00000000 		.word	hdma_tim2_ch1
+ 598 0078 00000000 		.word	.LC1
+ 600              		.global	waveNames
+ 601              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 602              		.align	2
+ 603              	.LC2:
+ 604 0000 53696E65 		.ascii	"Sine\000"
+ 604      00
+ 605 0005 000000   		.align	2
+ 606              	.LC3:
+ 607 0008 53617774 		.ascii	"Sawtooth\000"
+ 607      6F6F7468 
+ 607      00
+ 608 0011 000000   		.align	2
+ 609              	.LC4:
+ 610 0014 54726961 		.ascii	"Triangle\000"
+ 610      6E676C65 
+ 610      00
+ 611 001d 000000   		.align	2
+ 612              	.LC5:
+ 613 0020 5069616E 		.ascii	"Piano\000"
+ 613      6F00
+ 614 0026 0000     		.align	2
+ 615              	.LC6:
+ 616 0028 47756974 		.ascii	"Guitar\000"
+ 616      617200
+ 617 002f 00       		.align	2
+ 618              	.LC7:
+ 619 0030 4472756D 		.ascii	"Drum\000"
+ 619      00
+ 620              		.section	.data.waveNames,"aw"
+ 621              		.align	2
+ 624              	waveNames:
+ 625 0000 00000000 		.word	.LC2
+ 626 0004 08000000 		.word	.LC3
+ 627 0008 14000000 		.word	.LC4
+ 628 000c 20000000 		.word	.LC5
+ 629 0010 28000000 		.word	.LC6
+ 630 0014 30000000 		.word	.LC7
+ 631              		.global	waveforms
+ 632              		.section	.data.waveforms,"aw"
+ 633              		.align	2
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 12
+
+
+ 636              	waveforms:
+ 637 0000 00000000 		.word	Sin_LUT
+ 638 0004 00000000 		.word	Saw_LUT
+ 639 0008 00000000 		.word	Triangle_LUT
+ 640 000c 00000000 		.word	Piano_LUT
+ 641 0010 00000000 		.word	Guitar_LUT
+ 642 0014 00000000 		.word	Drum_LUT
+ 643              		.global	currentWave
+ 644              		.section	.bss.currentWave,"aw",%nobits
+ 647              	currentWave:
+ 648 0000 00       		.space	1
+ 649              		.global	lastDebounceTick
+ 650              		.section	.bss.lastDebounceTick,"aw",%nobits
+ 651              		.align	2
+ 654              	lastDebounceTick:
+ 655 0000 00000000 		.space	4
+ 656              		.global	DestAddress
+ 657              		.section	.data.DestAddress,"aw"
+ 658              		.align	2
+ 661              	DestAddress:
+ 662 0000 3C040040 		.word	1073742908
+ 663              		.global	TIM2_Ticks
+ 664              		.section	.data.TIM2_Ticks,"aw"
+ 665              		.align	2
+ 668              	TIM2_Ticks:
+ 669 0000 19000000 		.word	25
+ 670              		.global	Drum_LUT
+ 671              		.section	.data.Drum_LUT,"aw"
+ 672              		.align	2
+ 675              	Drum_LUT:
+ 676 0000 FF070000 		.word	2047
+ 677 0004 440D0000 		.word	3396
+ 678 0008 48070000 		.word	1864
+ 679 000c 3E080000 		.word	2110
+ 680 0010 0F080000 		.word	2063
+ 681 0014 480D0000 		.word	3400
+ 682 0018 65070000 		.word	1893
+ 683 001c 8D070000 		.word	1933
+ 684 0020 26080000 		.word	2086
+ 685 0024 60080000 		.word	2144
+ 686 0028 F4070000 		.word	2036
+ 687 002c EE070000 		.word	2030
+ 688 0030 F7070000 		.word	2039
+ 689 0034 9D070000 		.word	1949
+ 690 0038 86050000 		.word	1414
+ 691 003c 38070000 		.word	1848
+ 692 0040 2B080000 		.word	2091
+ 693 0044 F0070000 		.word	2032
+ 694 0048 FC070000 		.word	2044
+ 695 004c 0B080000 		.word	2059
+ 696 0050 00080000 		.word	2048
+ 697 0054 2D080000 		.word	2093
+ 698 0058 FC070000 		.word	2044
+ 699 005c E4070000 		.word	2020
+ 700 0060 2E080000 		.word	2094
+ 701 0064 0B070000 		.word	1803
+ 702 0068 18080000 		.word	2072
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 13
+
+
+ 703 006c FD070000 		.word	2045
+ 704 0070 7D080000 		.word	2173
+ 705 0074 E1070000 		.word	2017
+ 706 0078 A30C0000 		.word	3235
+ 707 007c FC040000 		.word	1276
+ 708 0080 87060000 		.word	1671
+ 709 0084 91080000 		.word	2193
+ 710 0088 84090000 		.word	2436
+ 711 008c 38080000 		.word	2104
+ 712 0090 8B070000 		.word	1931
+ 713 0094 0E080000 		.word	2062
+ 714 0098 EC070000 		.word	2028
+ 715 009c F0070000 		.word	2032
+ 716 00a0 FF0F0000 		.word	4095
+ 717 00a4 82070000 		.word	1922
+ 718 00a8 F3070000 		.word	2035
+ 719 00ac FA070000 		.word	2042
+ 720 00b0 C6090000 		.word	2502
+ 721 00b4 44090000 		.word	2372
+ 722 00b8 1C070000 		.word	1820
+ 723 00bc CC070000 		.word	1996
+ 724 00c0 EC080000 		.word	2284
+ 725 00c4 18080000 		.word	2072
+ 726 00c8 E2070000 		.word	2018
+ 727 00cc 03080000 		.word	2051
+ 728 00d0 9F020000 		.word	671
+ 729 00d4 79090000 		.word	2425
+ 730 00d8 1B080000 		.word	2075
+ 731 00dc 15080000 		.word	2069
+ 732 00e0 11000000 		.word	17
+ 733 00e4 BF080000 		.word	2239
+ 734 00e8 FA070000 		.word	2042
+ 735 00ec E7070000 		.word	2023
+ 736 00f0 90080000 		.word	2192
+ 737 00f4 04080000 		.word	2052
+ 738 00f8 560B0000 		.word	2902
+ 739 00fc 52090000 		.word	2386
+ 740 0100 E90F0000 		.word	4073
+ 741 0104 D9070000 		.word	2009
+ 742 0108 ED080000 		.word	2285
+ 743 010c F6070000 		.word	2038
+ 744 0110 D6090000 		.word	2518
+ 745 0114 970A0000 		.word	2711
+ 746 0118 00080000 		.word	2048
+ 747 011c 30080000 		.word	2096
+ 748 0120 5D060000 		.word	1629
+ 749 0124 D1070000 		.word	2001
+ 750 0128 26080000 		.word	2086
+ 751 012c FB070000 		.word	2043
+ 752 0130 F5090000 		.word	2549
+ 753 0134 66070000 		.word	1894
+ 754 0138 0D080000 		.word	2061
+ 755 013c 1C080000 		.word	2076
+ 756 0140 D1070000 		.word	2001
+ 757 0144 07080000 		.word	2055
+ 758 0148 FB070000 		.word	2043
+ 759 014c 01080000 		.word	2049
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 14
+
+
+ 760 0150 33080000 		.word	2099
+ 761 0154 FF070000 		.word	2047
+ 762 0158 11080000 		.word	2065
+ 763 015c FF070000 		.word	2047
+ 764 0160 6B0B0000 		.word	2923
+ 765 0164 17080000 		.word	2071
+ 766 0168 E1070000 		.word	2017
+ 767 016c 20080000 		.word	2080
+ 768 0170 E2070000 		.word	2018
+ 769 0174 01080000 		.word	2049
+ 770 0178 27070000 		.word	1831
+ 771 017c DE070000 		.word	2014
+ 772 0180 45030000 		.word	837
+ 773 0184 F7080000 		.word	2295
+ 774 0188 BA070000 		.word	1978
+ 775 018c F8070000 		.word	2040
+ 776 0190 BC070000 		.word	1980
+ 777 0194 F4070000 		.word	2036
+ 778 0198 3A080000 		.word	2106
+ 779 019c FA070000 		.word	2042
+ 780 01a0 6B060000 		.word	1643
+ 781 01a4 07080000 		.word	2055
+ 782 01a8 12080000 		.word	2066
+ 783 01ac F0070000 		.word	2032
+ 784 01b0 02080000 		.word	2050
+ 785 01b4 8A090000 		.word	2442
+ 786 01b8 61080000 		.word	2145
+ 787 01bc AA080000 		.word	2218
+ 788 01c0 4F080000 		.word	2127
+ 789 01c4 F0070000 		.word	2032
+ 790 01c8 F6070000 		.word	2038
+ 791 01cc F5060000 		.word	1781
+ 792 01d0 6A080000 		.word	2154
+ 793 01d4 89090000 		.word	2441
+ 794 01d8 54080000 		.word	2132
+ 795 01dc FF0F0000 		.word	4095
+ 796 01e0 66080000 		.word	2150
+ 797 01e4 DC070000 		.word	2012
+ 798 01e8 F4070000 		.word	2036
+ 799 01ec 4F060000 		.word	1615
+ 800 01f0 BD070000 		.word	1981
+ 801 01f4 43010000 		.word	323
+ 802 01f8 DD090000 		.word	2525
+ 803 01fc FF070000 		.word	2047
+ 804              		.global	Guitar_LUT
+ 805              		.section	.data.Guitar_LUT,"aw"
+ 806              		.align	2
+ 809              	Guitar_LUT:
+ 810 0000 B2070000 		.word	1970
+ 811 0004 F9080000 		.word	2297
+ 812 0008 F7080000 		.word	2295
+ 813 000c 00080000 		.word	2048
+ 814 0010 E5070000 		.word	2021
+ 815 0014 F1060000 		.word	1777
+ 816 0018 D4060000 		.word	1748
+ 817 001c 90070000 		.word	1936
+ 818 0020 9D050000 		.word	1437
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 15
+
+
+ 819 0024 E0070000 		.word	2016
+ 820 0028 D4070000 		.word	2004
+ 821 002c B7070000 		.word	1975
+ 822 0030 DB070000 		.word	2011
+ 823 0034 CF070000 		.word	1999
+ 824 0038 12070000 		.word	1810
+ 825 003c A7070000 		.word	1959
+ 826 0040 AE070000 		.word	1966
+ 827 0044 9D070000 		.word	1949
+ 828 0048 4F060000 		.word	1615
+ 829 004c 89090000 		.word	2441
+ 830 0050 2A070000 		.word	1834
+ 831 0054 15070000 		.word	1813
+ 832 0058 65090000 		.word	2405
+ 833 005c 71080000 		.word	2161
+ 834 0060 97060000 		.word	1687
+ 835 0064 B7070000 		.word	1975
+ 836 0068 90070000 		.word	1936
+ 837 006c C1070000 		.word	1985
+ 838 0070 A6070000 		.word	1958
+ 839 0074 7A070000 		.word	1914
+ 840 0078 5B070000 		.word	1883
+ 841 007c B8070000 		.word	1976
+ 842 0080 B7070000 		.word	1975
+ 843 0084 E6070000 		.word	2022
+ 844 0088 EB060000 		.word	1771
+ 845 008c 1B080000 		.word	2075
+ 846 0090 EE060000 		.word	1774
+ 847 0094 05080000 		.word	2053
+ 848 0098 84070000 		.word	1924
+ 849 009c 7D060000 		.word	1661
+ 850 00a0 84080000 		.word	2180
+ 851 00a4 9A070000 		.word	1946
+ 852 00a8 BB070000 		.word	1979
+ 853 00ac B6070000 		.word	1974
+ 854 00b0 C3070000 		.word	1987
+ 855 00b4 3C070000 		.word	1852
+ 856 00b8 17080000 		.word	2071
+ 857 00bc AB070000 		.word	1963
+ 858 00c0 00070000 		.word	1792
+ 859 00c4 87070000 		.word	1927
+ 860 00c8 3F080000 		.word	2111
+ 861 00cc 8A070000 		.word	1930
+ 862 00d0 47080000 		.word	2119
+ 863 00d4 16080000 		.word	2070
+ 864 00d8 10070000 		.word	1808
+ 865 00dc 86070000 		.word	1926
+ 866 00e0 18080000 		.word	2072
+ 867 00e4 11080000 		.word	2065
+ 868 00e8 E3070000 		.word	2019
+ 869 00ec CE060000 		.word	1742
+ 870 00f0 2B080000 		.word	2091
+ 871 00f4 E6070000 		.word	2022
+ 872 00f8 970A0000 		.word	2711
+ 873 00fc 70080000 		.word	2160
+ 874 0100 EF070000 		.word	2031
+ 875 0104 70080000 		.word	2160
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 16
+
+
+ 876 0108 98080000 		.word	2200
+ 877 010c 81080000 		.word	2177
+ 878 0110 11080000 		.word	2065
+ 879 0114 FC070000 		.word	2044
+ 880 0118 D8050000 		.word	1496
+ 881 011c 3B060000 		.word	1595
+ 882 0120 C4070000 		.word	1988
+ 883 0124 AA070000 		.word	1962
+ 884 0128 D3070000 		.word	2003
+ 885 012c C2070000 		.word	1986
+ 886 0130 97080000 		.word	2199
+ 887 0134 AE070000 		.word	1966
+ 888 0138 A2070000 		.word	1954
+ 889 013c BB070000 		.word	1979
+ 890 0140 2C080000 		.word	2092
+ 891 0144 3C080000 		.word	2108
+ 892 0148 B2060000 		.word	1714
+ 893 014c 07080000 		.word	2055
+ 894 0150 D3070000 		.word	2003
+ 895 0154 70060000 		.word	1648
+ 896 0158 03080000 		.word	2051
+ 897 015c 05070000 		.word	1797
+ 898 0160 DB070000 		.word	2011
+ 899 0164 EA070000 		.word	2026
+ 900 0168 B0070000 		.word	1968
+ 901 016c A3070000 		.word	1955
+ 902 0170 57070000 		.word	1879
+ 903 0174 0E070000 		.word	1806
+ 904 0178 F8070000 		.word	2040
+ 905 017c B0070000 		.word	1968
+ 906 0180 AD080000 		.word	2221
+ 907 0184 62070000 		.word	1890
+ 908 0188 7E080000 		.word	2174
+ 909 018c 70070000 		.word	1904
+ 910 0190 A0070000 		.word	1952
+ 911 0194 86070000 		.word	1926
+ 912 0198 9D090000 		.word	2461
+ 913 019c 39090000 		.word	2361
+ 914 01a0 8C070000 		.word	1932
+ 915 01a4 B6070000 		.word	1974
+ 916 01a8 A4070000 		.word	1956
+ 917 01ac AC070000 		.word	1964
+ 918 01b0 FA070000 		.word	2042
+ 919 01b4 3E070000 		.word	1854
+ 920 01b8 AF070000 		.word	1967
+ 921 01bc B6070000 		.word	1974
+ 922 01c0 3A070000 		.word	1850
+ 923 01c4 9D070000 		.word	1949
+ 924 01c8 24080000 		.word	2084
+ 925 01cc 14070000 		.word	1812
+ 926 01d0 B6080000 		.word	2230
+ 927 01d4 47070000 		.word	1863
+ 928 01d8 5E080000 		.word	2142
+ 929 01dc 19060000 		.word	1561
+ 930 01e0 EE070000 		.word	2030
+ 931 01e4 E9060000 		.word	1769
+ 932 01e8 11090000 		.word	2321
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 17
+
+
+ 933 01ec 1F070000 		.word	1823
+ 934 01f0 0C060000 		.word	1548
+ 935 01f4 020A0000 		.word	2562
+ 936 01f8 3C070000 		.word	1852
+ 937 01fc B2070000 		.word	1970
+ 938              		.global	Piano_LUT
+ 939              		.section	.data.Piano_LUT,"aw"
+ 940              		.align	2
+ 943              	Piano_LUT:
+ 944 0000 6D070000 		.word	1901
+ 945 0004 FE070000 		.word	2046
+ 946 0008 2A070000 		.word	1834
+ 947 000c A3070000 		.word	1955
+ 948 0010 7C070000 		.word	1916
+ 949 0014 98070000 		.word	1944
+ 950 0018 62070000 		.word	1890
+ 951 001c E4070000 		.word	2020
+ 952 0020 A2070000 		.word	1954
+ 953 0024 DF070000 		.word	2015
+ 954 0028 94070000 		.word	1940
+ 955 002c 74070000 		.word	1908
+ 956 0030 4B070000 		.word	1867
+ 957 0034 9F080000 		.word	2207
+ 958 0038 79070000 		.word	1913
+ 959 003c 3E060000 		.word	1598
+ 960 0040 57070000 		.word	1879
+ 961 0044 6B070000 		.word	1899
+ 962 0048 1A070000 		.word	1818
+ 963 004c 75070000 		.word	1909
+ 964 0050 7E070000 		.word	1918
+ 965 0054 70070000 		.word	1904
+ 966 0058 7B050000 		.word	1403
+ 967 005c 52070000 		.word	1874
+ 968 0060 A0080000 		.word	2208
+ 969 0064 69070000 		.word	1897
+ 970 0068 EE0A0000 		.word	2798
+ 971 006c F1050000 		.word	1521
+ 972 0070 38060000 		.word	1592
+ 973 0074 92060000 		.word	1682
+ 974 0078 3E080000 		.word	2110
+ 975 007c 0B080000 		.word	2059
+ 976 0080 43050000 		.word	1347
+ 977 0084 E9070000 		.word	2025
+ 978 0088 19070000 		.word	1817
+ 979 008c 7B070000 		.word	1915
+ 980 0090 2D070000 		.word	1837
+ 981 0094 99070000 		.word	1945
+ 982 0098 1C060000 		.word	1564
+ 983 009c 07070000 		.word	1799
+ 984 00a0 F3060000 		.word	1779
+ 985 00a4 A7070000 		.word	1959
+ 986 00a8 48080000 		.word	2120
+ 987 00ac E8060000 		.word	1768
+ 988 00b0 49080000 		.word	2121
+ 989 00b4 EF060000 		.word	1775
+ 990 00b8 CE090000 		.word	2510
+ 991 00bc 5A070000 		.word	1882
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 18
+
+
+ 992 00c0 A2070000 		.word	1954
+ 993 00c4 7E070000 		.word	1918
+ 994 00c8 2B070000 		.word	1835
+ 995 00cc 7E070000 		.word	1918
+ 996 00d0 54070000 		.word	1876
+ 997 00d4 62070000 		.word	1890
+ 998 00d8 A70A0000 		.word	2727
+ 999 00dc FE060000 		.word	1790
+ 1000 00e0 DF080000 		.word	2271
+ 1001 00e4 AC060000 		.word	1708
+ 1002 00e8 3A070000 		.word	1850
+ 1003 00ec 03070000 		.word	1795
+ 1004 00f0 05050000 		.word	1285
+ 1005 00f4 DB060000 		.word	1755
+ 1006 00f8 EF050000 		.word	1519
+ 1007 00fc 5F070000 		.word	1887
+ 1008 0100 4D060000 		.word	1613
+ 1009 0104 85070000 		.word	1925
+ 1010 0108 D3070000 		.word	2003
+ 1011 010c 6C070000 		.word	1900
+ 1012 0110 4A070000 		.word	1866
+ 1013 0114 51070000 		.word	1873
+ 1014 0118 0C060000 		.word	1548
+ 1015 011c DE070000 		.word	2014
+ 1016 0120 D1060000 		.word	1745
+ 1017 0124 96070000 		.word	1942
+ 1018 0128 5D060000 		.word	1629
+ 1019 012c 23090000 		.word	2339
+ 1020 0130 11080000 		.word	2065
+ 1021 0134 5D070000 		.word	1885
+ 1022 0138 BC080000 		.word	2236
+ 1023 013c F6070000 		.word	2038
+ 1024 0140 57070000 		.word	1879
+ 1025 0144 69070000 		.word	1897
+ 1026 0148 3F070000 		.word	1855
+ 1027 014c 87070000 		.word	1927
+ 1028 0150 5E070000 		.word	1886
+ 1029 0154 66070000 		.word	1894
+ 1030 0158 03080000 		.word	2051
+ 1031 015c 73070000 		.word	1907
+ 1032 0160 9A070000 		.word	1946
+ 1033 0164 ED060000 		.word	1773
+ 1034 0168 92060000 		.word	1682
+ 1035 016c 5E070000 		.word	1886
+ 1036 0170 46070000 		.word	1862
+ 1037 0174 2C080000 		.word	2092
+ 1038 0178 44070000 		.word	1860
+ 1039 017c AC070000 		.word	1964
+ 1040 0180 AE080000 		.word	2222
+ 1041 0184 72070000 		.word	1906
+ 1042 0188 8C070000 		.word	1932
+ 1043 018c 63070000 		.word	1891
+ 1044 0190 86070000 		.word	1926
+ 1045 0194 53070000 		.word	1875
+ 1046 0198 33060000 		.word	1587
+ 1047 019c E6060000 		.word	1766
+ 1048 01a0 32070000 		.word	1842
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 19
+
+
+ 1049 01a4 36070000 		.word	1846
+ 1050 01a8 E8070000 		.word	2024
+ 1051 01ac 95070000 		.word	1941
+ 1052 01b0 61070000 		.word	1889
+ 1053 01b4 39070000 		.word	1849
+ 1054 01b8 8B060000 		.word	1675
+ 1055 01bc DB070000 		.word	2011
+ 1056 01c0 40070000 		.word	1856
+ 1057 01c4 8F070000 		.word	1935
+ 1058 01c8 37070000 		.word	1847
+ 1059 01cc 87070000 		.word	1927
+ 1060 01d0 5C070000 		.word	1884
+ 1061 01d4 7B070000 		.word	1915
+ 1062 01d8 FC060000 		.word	1788
+ 1063 01dc DB060000 		.word	1755
+ 1064 01e0 92050000 		.word	1426
+ 1065 01e4 4F060000 		.word	1615
+ 1066 01e8 8C070000 		.word	1932
+ 1067 01ec 76070000 		.word	1910
+ 1068 01f0 3C070000 		.word	1852
+ 1069 01f4 F7060000 		.word	1783
+ 1070 01f8 9F070000 		.word	1951
+ 1071 01fc 6D070000 		.word	1901
+ 1072              		.global	Triangle_LUT
+ 1073              		.section	.data.Triangle_LUT,"aw"
+ 1074              		.align	2
+ 1077              	Triangle_LUT:
+ 1078 0000 00000000 		.word	0
+ 1079 0004 3F000000 		.word	63
+ 1080 0008 7F000000 		.word	127
+ 1081 000c BF000000 		.word	191
+ 1082 0010 FF000000 		.word	255
+ 1083 0014 3F010000 		.word	319
+ 1084 0018 7F010000 		.word	383
+ 1085 001c BF010000 		.word	447
+ 1086 0020 FF010000 		.word	511
+ 1087 0024 3F020000 		.word	575
+ 1088 0028 7F020000 		.word	639
+ 1089 002c BF020000 		.word	703
+ 1090 0030 FF020000 		.word	767
+ 1091 0034 3F030000 		.word	831
+ 1092 0038 7F030000 		.word	895
+ 1093 003c BF030000 		.word	959
+ 1094 0040 FF030000 		.word	1023
+ 1095 0044 3F040000 		.word	1087
+ 1096 0048 7F040000 		.word	1151
+ 1097 004c BF040000 		.word	1215
+ 1098 0050 FF040000 		.word	1279
+ 1099 0054 3F050000 		.word	1343
+ 1100 0058 7F050000 		.word	1407
+ 1101 005c BF050000 		.word	1471
+ 1102 0060 FF050000 		.word	1535
+ 1103 0064 3F060000 		.word	1599
+ 1104 0068 7F060000 		.word	1663
+ 1105 006c BF060000 		.word	1727
+ 1106 0070 FF060000 		.word	1791
+ 1107 0074 3F070000 		.word	1855
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 20
+
+
+ 1108 0078 7F070000 		.word	1919
+ 1109 007c BF070000 		.word	1983
+ 1110 0080 FF070000 		.word	2047
+ 1111 0084 3F080000 		.word	2111
+ 1112 0088 7F080000 		.word	2175
+ 1113 008c BF080000 		.word	2239
+ 1114 0090 FF080000 		.word	2303
+ 1115 0094 3F090000 		.word	2367
+ 1116 0098 7F090000 		.word	2431
+ 1117 009c BF090000 		.word	2495
+ 1118 00a0 FF090000 		.word	2559
+ 1119 00a4 3F0A0000 		.word	2623
+ 1120 00a8 7F0A0000 		.word	2687
+ 1121 00ac BF0A0000 		.word	2751
+ 1122 00b0 FF0A0000 		.word	2815
+ 1123 00b4 3F0B0000 		.word	2879
+ 1124 00b8 7F0B0000 		.word	2943
+ 1125 00bc BF0B0000 		.word	3007
+ 1126 00c0 FF0B0000 		.word	3071
+ 1127 00c4 3F0C0000 		.word	3135
+ 1128 00c8 7F0C0000 		.word	3199
+ 1129 00cc BF0C0000 		.word	3263
+ 1130 00d0 FF0C0000 		.word	3327
+ 1131 00d4 3F0D0000 		.word	3391
+ 1132 00d8 7F0D0000 		.word	3455
+ 1133 00dc BF0D0000 		.word	3519
+ 1134 00e0 FF0D0000 		.word	3583
+ 1135 00e4 3F0E0000 		.word	3647
+ 1136 00e8 7F0E0000 		.word	3711
+ 1137 00ec BF0E0000 		.word	3775
+ 1138 00f0 FF0E0000 		.word	3839
+ 1139 00f4 3F0F0000 		.word	3903
+ 1140 00f8 7F0F0000 		.word	3967
+ 1141 00fc BF0F0000 		.word	4031
+ 1142 0100 FF0F0000 		.word	4095
+ 1143 0104 BF0F0000 		.word	4031
+ 1144 0108 7F0F0000 		.word	3967
+ 1145 010c 3F0F0000 		.word	3903
+ 1146 0110 FF0E0000 		.word	3839
+ 1147 0114 BF0E0000 		.word	3775
+ 1148 0118 7F0E0000 		.word	3711
+ 1149 011c 3F0E0000 		.word	3647
+ 1150 0120 FF0D0000 		.word	3583
+ 1151 0124 BF0D0000 		.word	3519
+ 1152 0128 7F0D0000 		.word	3455
+ 1153 012c 3F0D0000 		.word	3391
+ 1154 0130 FF0C0000 		.word	3327
+ 1155 0134 BF0C0000 		.word	3263
+ 1156 0138 7F0C0000 		.word	3199
+ 1157 013c 3F0C0000 		.word	3135
+ 1158 0140 FF0B0000 		.word	3071
+ 1159 0144 BF0B0000 		.word	3007
+ 1160 0148 7F0B0000 		.word	2943
+ 1161 014c 3F0B0000 		.word	2879
+ 1162 0150 FF0A0000 		.word	2815
+ 1163 0154 BF0A0000 		.word	2751
+ 1164 0158 7F0A0000 		.word	2687
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 21
+
+
+ 1165 015c 3F0A0000 		.word	2623
+ 1166 0160 FF090000 		.word	2559
+ 1167 0164 BF090000 		.word	2495
+ 1168 0168 7F090000 		.word	2431
+ 1169 016c 3F090000 		.word	2367
+ 1170 0170 FF080000 		.word	2303
+ 1171 0174 BF080000 		.word	2239
+ 1172 0178 7F080000 		.word	2175
+ 1173 017c 3F080000 		.word	2111
+ 1174 0180 FF070000 		.word	2047
+ 1175 0184 BF070000 		.word	1983
+ 1176 0188 7F070000 		.word	1919
+ 1177 018c 3F070000 		.word	1855
+ 1178 0190 FF060000 		.word	1791
+ 1179 0194 BF060000 		.word	1727
+ 1180 0198 7F060000 		.word	1663
+ 1181 019c 3F060000 		.word	1599
+ 1182 01a0 FF050000 		.word	1535
+ 1183 01a4 BF050000 		.word	1471
+ 1184 01a8 7F050000 		.word	1407
+ 1185 01ac 3F050000 		.word	1343
+ 1186 01b0 FF040000 		.word	1279
+ 1187 01b4 BF040000 		.word	1215
+ 1188 01b8 7F040000 		.word	1151
+ 1189 01bc 3F040000 		.word	1087
+ 1190 01c0 FF030000 		.word	1023
+ 1191 01c4 BF030000 		.word	959
+ 1192 01c8 7F030000 		.word	895
+ 1193 01cc 3F030000 		.word	831
+ 1194 01d0 FF020000 		.word	767
+ 1195 01d4 BF020000 		.word	703
+ 1196 01d8 7F020000 		.word	639
+ 1197 01dc 3F020000 		.word	575
+ 1198 01e0 FF010000 		.word	511
+ 1199 01e4 BF010000 		.word	447
+ 1200 01e8 7F010000 		.word	383
+ 1201 01ec 3F010000 		.word	319
+ 1202 01f0 FF000000 		.word	255
+ 1203 01f4 BF000000 		.word	191
+ 1204 01f8 7F000000 		.word	127
+ 1205 01fc 3F000000 		.word	63
+ 1206              		.global	Saw_LUT
+ 1207              		.section	.data.Saw_LUT,"aw"
+ 1208              		.align	2
+ 1211              	Saw_LUT:
+ 1212 0000 00000000 		.word	0
+ 1213 0004 1F000000 		.word	31
+ 1214 0008 3F000000 		.word	63
+ 1215 000c 5F000000 		.word	95
+ 1216 0010 7F000000 		.word	127
+ 1217 0014 9F000000 		.word	159
+ 1218 0018 BF000000 		.word	191
+ 1219 001c DF000000 		.word	223
+ 1220 0020 FF000000 		.word	255
+ 1221 0024 1F010000 		.word	287
+ 1222 0028 3F010000 		.word	319
+ 1223 002c 5F010000 		.word	351
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 22
+
+
+ 1224 0030 7F010000 		.word	383
+ 1225 0034 9F010000 		.word	415
+ 1226 0038 BF010000 		.word	447
+ 1227 003c DF010000 		.word	479
+ 1228 0040 FF010000 		.word	511
+ 1229 0044 1F020000 		.word	543
+ 1230 0048 3F020000 		.word	575
+ 1231 004c 5F020000 		.word	607
+ 1232 0050 7F020000 		.word	639
+ 1233 0054 9F020000 		.word	671
+ 1234 0058 BF020000 		.word	703
+ 1235 005c DF020000 		.word	735
+ 1236 0060 FF020000 		.word	767
+ 1237 0064 1F030000 		.word	799
+ 1238 0068 3F030000 		.word	831
+ 1239 006c 5F030000 		.word	863
+ 1240 0070 7F030000 		.word	895
+ 1241 0074 9F030000 		.word	927
+ 1242 0078 BF030000 		.word	959
+ 1243 007c DF030000 		.word	991
+ 1244 0080 FF030000 		.word	1023
+ 1245 0084 1F040000 		.word	1055
+ 1246 0088 3F040000 		.word	1087
+ 1247 008c 5F040000 		.word	1119
+ 1248 0090 7F040000 		.word	1151
+ 1249 0094 9F040000 		.word	1183
+ 1250 0098 BF040000 		.word	1215
+ 1251 009c DF040000 		.word	1247
+ 1252 00a0 FF040000 		.word	1279
+ 1253 00a4 1F050000 		.word	1311
+ 1254 00a8 3F050000 		.word	1343
+ 1255 00ac 5F050000 		.word	1375
+ 1256 00b0 7F050000 		.word	1407
+ 1257 00b4 9F050000 		.word	1439
+ 1258 00b8 BF050000 		.word	1471
+ 1259 00bc DF050000 		.word	1503
+ 1260 00c0 FF050000 		.word	1535
+ 1261 00c4 1F060000 		.word	1567
+ 1262 00c8 3F060000 		.word	1599
+ 1263 00cc 5F060000 		.word	1631
+ 1264 00d0 7F060000 		.word	1663
+ 1265 00d4 9F060000 		.word	1695
+ 1266 00d8 BF060000 		.word	1727
+ 1267 00dc DF060000 		.word	1759
+ 1268 00e0 FF060000 		.word	1791
+ 1269 00e4 1F070000 		.word	1823
+ 1270 00e8 3F070000 		.word	1855
+ 1271 00ec 5F070000 		.word	1887
+ 1272 00f0 7F070000 		.word	1919
+ 1273 00f4 9F070000 		.word	1951
+ 1274 00f8 BF070000 		.word	1983
+ 1275 00fc DF070000 		.word	2015
+ 1276 0100 FF070000 		.word	2047
+ 1277 0104 1F080000 		.word	2079
+ 1278 0108 3F080000 		.word	2111
+ 1279 010c 5F080000 		.word	2143
+ 1280 0110 7F080000 		.word	2175
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 23
+
+
+ 1281 0114 9F080000 		.word	2207
+ 1282 0118 BF080000 		.word	2239
+ 1283 011c DF080000 		.word	2271
+ 1284 0120 FF080000 		.word	2303
+ 1285 0124 1F090000 		.word	2335
+ 1286 0128 3F090000 		.word	2367
+ 1287 012c 5F090000 		.word	2399
+ 1288 0130 7F090000 		.word	2431
+ 1289 0134 9F090000 		.word	2463
+ 1290 0138 BF090000 		.word	2495
+ 1291 013c DF090000 		.word	2527
+ 1292 0140 FF090000 		.word	2559
+ 1293 0144 1F0A0000 		.word	2591
+ 1294 0148 3F0A0000 		.word	2623
+ 1295 014c 5F0A0000 		.word	2655
+ 1296 0150 7F0A0000 		.word	2687
+ 1297 0154 9F0A0000 		.word	2719
+ 1298 0158 BF0A0000 		.word	2751
+ 1299 015c DF0A0000 		.word	2783
+ 1300 0160 FF0A0000 		.word	2815
+ 1301 0164 1F0B0000 		.word	2847
+ 1302 0168 3F0B0000 		.word	2879
+ 1303 016c 5F0B0000 		.word	2911
+ 1304 0170 7F0B0000 		.word	2943
+ 1305 0174 9F0B0000 		.word	2975
+ 1306 0178 BF0B0000 		.word	3007
+ 1307 017c DF0B0000 		.word	3039
+ 1308 0180 FF0B0000 		.word	3071
+ 1309 0184 1F0C0000 		.word	3103
+ 1310 0188 3F0C0000 		.word	3135
+ 1311 018c 5F0C0000 		.word	3167
+ 1312 0190 7F0C0000 		.word	3199
+ 1313 0194 9F0C0000 		.word	3231
+ 1314 0198 BF0C0000 		.word	3263
+ 1315 019c DF0C0000 		.word	3295
+ 1316 01a0 FF0C0000 		.word	3327
+ 1317 01a4 1F0D0000 		.word	3359
+ 1318 01a8 3F0D0000 		.word	3391
+ 1319 01ac 5F0D0000 		.word	3423
+ 1320 01b0 7F0D0000 		.word	3455
+ 1321 01b4 9F0D0000 		.word	3487
+ 1322 01b8 BF0D0000 		.word	3519
+ 1323 01bc DF0D0000 		.word	3551
+ 1324 01c0 FF0D0000 		.word	3583
+ 1325 01c4 1F0E0000 		.word	3615
+ 1326 01c8 3F0E0000 		.word	3647
+ 1327 01cc 5F0E0000 		.word	3679
+ 1328 01d0 7F0E0000 		.word	3711
+ 1329 01d4 9F0E0000 		.word	3743
+ 1330 01d8 BF0E0000 		.word	3775
+ 1331 01dc DF0E0000 		.word	3807
+ 1332 01e0 FF0E0000 		.word	3839
+ 1333 01e4 1F0F0000 		.word	3871
+ 1334 01e8 3F0F0000 		.word	3903
+ 1335 01ec 5F0F0000 		.word	3935
+ 1336 01f0 7F0F0000 		.word	3967
+ 1337 01f4 9F0F0000 		.word	3999
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 24
+
+
+ 1338 01f8 BF0F0000 		.word	4031
+ 1339 01fc DF0F0000 		.word	4063
+ 1340              		.global	Sin_LUT
+ 1341              		.section	.data.Sin_LUT,"aw"
+ 1342              		.align	2
+ 1345              	Sin_LUT:
+ 1346 0000 FF070000 		.word	2047
+ 1347 0004 63080000 		.word	2147
+ 1348 0008 C8080000 		.word	2248
+ 1349 000c 2B090000 		.word	2347
+ 1350 0010 8E090000 		.word	2446
+ 1351 0014 F1090000 		.word	2545
+ 1352 0018 510A0000 		.word	2641
+ 1353 001c B10A0000 		.word	2737
+ 1354 0020 0F0B0000 		.word	2831
+ 1355 0024 6A0B0000 		.word	2922
+ 1356 0028 C40B0000 		.word	3012
+ 1357 002c 1C0C0000 		.word	3100
+ 1358 0030 710C0000 		.word	3185
+ 1359 0034 C30C0000 		.word	3267
+ 1360 0038 120D0000 		.word	3346
+ 1361 003c 5E0D0000 		.word	3422
+ 1362 0040 A70D0000 		.word	3495
+ 1363 0044 EC0D0000 		.word	3564
+ 1364 0048 2E0E0000 		.word	3630
+ 1365 004c 6C0E0000 		.word	3692
+ 1366 0050 A50E0000 		.word	3749
+ 1367 0054 DB0E0000 		.word	3803
+ 1368 0058 0D0F0000 		.word	3853
+ 1369 005c 3A0F0000 		.word	3898
+ 1370 0060 630F0000 		.word	3939
+ 1371 0064 870F0000 		.word	3975
+ 1372 0068 A60F0000 		.word	4006
+ 1373 006c C10F0000 		.word	4033
+ 1374 0070 D70F0000 		.word	4055
+ 1375 0074 E80F0000 		.word	4072
+ 1376 0078 F50F0000 		.word	4085
+ 1377 007c FC0F0000 		.word	4092
+ 1378 0080 FF0F0000 		.word	4095
+ 1379 0084 FC0F0000 		.word	4092
+ 1380 0088 F50F0000 		.word	4085
+ 1381 008c E80F0000 		.word	4072
+ 1382 0090 D70F0000 		.word	4055
+ 1383 0094 C10F0000 		.word	4033
+ 1384 0098 A60F0000 		.word	4006
+ 1385 009c 870F0000 		.word	3975
+ 1386 00a0 630F0000 		.word	3939
+ 1387 00a4 3A0F0000 		.word	3898
+ 1388 00a8 0D0F0000 		.word	3853
+ 1389 00ac DB0E0000 		.word	3803
+ 1390 00b0 A50E0000 		.word	3749
+ 1391 00b4 6C0E0000 		.word	3692
+ 1392 00b8 2E0E0000 		.word	3630
+ 1393 00bc EC0D0000 		.word	3564
+ 1394 00c0 A70D0000 		.word	3495
+ 1395 00c4 5E0D0000 		.word	3422
+ 1396 00c8 120D0000 		.word	3346
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 25
+
+
+ 1397 00cc C30C0000 		.word	3267
+ 1398 00d0 710C0000 		.word	3185
+ 1399 00d4 1C0C0000 		.word	3100
+ 1400 00d8 C40B0000 		.word	3012
+ 1401 00dc 6A0B0000 		.word	2922
+ 1402 00e0 0F0B0000 		.word	2831
+ 1403 00e4 B10A0000 		.word	2737
+ 1404 00e8 510A0000 		.word	2641
+ 1405 00ec F1090000 		.word	2545
+ 1406 00f0 8E090000 		.word	2446
+ 1407 00f4 2B090000 		.word	2347
+ 1408 00f8 C8080000 		.word	2248
+ 1409 00fc 63080000 		.word	2147
+ 1410 0100 FF070000 		.word	2047
+ 1411 0104 9B070000 		.word	1947
+ 1412 0108 36070000 		.word	1846
+ 1413 010c D3060000 		.word	1747
+ 1414 0110 70060000 		.word	1648
+ 1415 0114 0D060000 		.word	1549
+ 1416 0118 AD050000 		.word	1453
+ 1417 011c 4D050000 		.word	1357
+ 1418 0120 EF040000 		.word	1263
+ 1419 0124 94040000 		.word	1172
+ 1420 0128 3A040000 		.word	1082
+ 1421 012c E2030000 		.word	994
+ 1422 0130 8D030000 		.word	909
+ 1423 0134 3B030000 		.word	827
+ 1424 0138 EC020000 		.word	748
+ 1425 013c A0020000 		.word	672
+ 1426 0140 57020000 		.word	599
+ 1427 0144 12020000 		.word	530
+ 1428 0148 D0010000 		.word	464
+ 1429 014c 92010000 		.word	402
+ 1430 0150 59010000 		.word	345
+ 1431 0154 23010000 		.word	291
+ 1432 0158 F1000000 		.word	241
+ 1433 015c C4000000 		.word	196
+ 1434 0160 9B000000 		.word	155
+ 1435 0164 77000000 		.word	119
+ 1436 0168 58000000 		.word	88
+ 1437 016c 3D000000 		.word	61
+ 1438 0170 27000000 		.word	39
+ 1439 0174 16000000 		.word	22
+ 1440 0178 09000000 		.word	9
+ 1441 017c 02000000 		.word	2
+ 1442 0180 00000000 		.word	0
+ 1443 0184 02000000 		.word	2
+ 1444 0188 09000000 		.word	9
+ 1445 018c 16000000 		.word	22
+ 1446 0190 27000000 		.word	39
+ 1447 0194 3D000000 		.word	61
+ 1448 0198 58000000 		.word	88
+ 1449 019c 77000000 		.word	119
+ 1450 01a0 9B000000 		.word	155
+ 1451 01a4 C4000000 		.word	196
+ 1452 01a8 F1000000 		.word	241
+ 1453 01ac 23010000 		.word	291
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 26
+
+
+ 1454 01b0 59010000 		.word	345
+ 1455 01b4 92010000 		.word	402
+ 1456 01b8 D0010000 		.word	464
+ 1457 01bc 12020000 		.word	530
+ 1458 01c0 57020000 		.word	599
+ 1459 01c4 A0020000 		.word	672
+ 1460 01c8 EC020000 		.word	748
+ 1461 01cc 3B030000 		.word	827
+ 1462 01d0 8D030000 		.word	909
+ 1463 01d4 E2030000 		.word	994
+ 1464 01d8 3A040000 		.word	1082
+ 1465 01dc 94040000 		.word	1172
+ 1466 01e0 EF040000 		.word	1263
+ 1467 01e4 4D050000 		.word	1357
+ 1468 01e8 AD050000 		.word	1453
+ 1469 01ec 0D060000 		.word	1549
+ 1470 01f0 70060000 		.word	1648
+ 1471 01f4 D3060000 		.word	1747
+ 1472 01f8 36070000 		.word	1846
+ 1473 01fc 9B070000 		.word	1947
+ 1474              		.global	hdma_tim2_ch1
+ 1475              		.section	.bss.hdma_tim2_ch1,"aw",%nobits
+ 1476              		.align	2
+ 1479              	hdma_tim2_ch1:
+ 1480 0000 00000000 		.space	96
+ 1480      00000000 
+ 1480      00000000 
+ 1480      00000000 
+ 1480      00000000 
+ 1481              		.global	htim3
+ 1482              		.section	.bss.htim3,"aw",%nobits
+ 1483              		.align	2
+ 1486              	htim3:
+ 1487 0000 00000000 		.space	72
+ 1487      00000000 
+ 1487      00000000 
+ 1487      00000000 
+ 1487      00000000 
+ 1488              		.global	htim2
+ 1489              		.section	.bss.htim2,"aw",%nobits
+ 1490              		.align	2
+ 1493              	htim2:
+ 1494 0000 00000000 		.space	72
+ 1494      00000000 
+ 1494      00000000 
+ 1494      00000000 
+ 1494      00000000 
+ 1495              		.ident	"GCC: (xPack GNU Arm Embedded GCC x86_64) 14.2.1 20241119"
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 27
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:18     .text.MX_GPIO_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:23     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:110    .text.MX_GPIO_Init:000000d4 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:116    .text.MX_DMA_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:121    .text.MX_DMA_Init:00000000 MX_DMA_Init
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:147    .text.MX_DMA_Init:00000030 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:150    .rodata.EXTI0_IRQHandler.str1.4:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:154    .text.EXTI0_IRQHandler:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:160    .text.EXTI0_IRQHandler:00000000 EXTI0_IRQHandler
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:226    .text.EXTI0_IRQHandler:00000098 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:654    .bss.lastDebounceTick:00000000 lastDebounceTick
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1493   .bss.htim2:00000000 htim2
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1479   .bss.hdma_tim2_ch1:00000000 hdma_tim2_ch1
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:647    .bss.currentWave:00000000 currentWave
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:636    .data.waveforms:00000000 waveforms
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:624    .data.waveNames:00000000 waveNames
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:237    .text.Error_Handler:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:243    .text.Error_Handler:00000000 Error_Handler
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:258    .text.MX_TIM2_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:263    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:376    .text.MX_TIM2_Init:000000f8 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:382    .text.MX_TIM3_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:387    .text.MX_TIM3_Init:00000000 MX_TIM3_Init
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:462    .text.MX_TIM3_Init:0000009c $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1486   .bss.htim3:00000000 htim3
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:466    .text.SystemClock_Config:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:472    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:537    .text.SystemClock_Config:00000084 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:541    .rodata.main.str1.4:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:545    .text.main:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:551    .text.main:00000000 main
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:593    .text.main:00000064 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:661    .data.DestAddress:00000000 DestAddress
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1345   .data.Sin_LUT:00000000 Sin_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:602    .rodata.str1.4:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:621    .data.waveNames:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:633    .data.waveforms:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1211   .data.Saw_LUT:00000000 Saw_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1077   .data.Triangle_LUT:00000000 Triangle_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:943    .data.Piano_LUT:00000000 Piano_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:809    .data.Guitar_LUT:00000000 Guitar_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:675    .data.Drum_LUT:00000000 Drum_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:648    .bss.currentWave:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:651    .bss.lastDebounceTick:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:658    .data.DestAddress:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:668    .data.TIM2_Ticks:00000000 TIM2_Ticks
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:665    .data.TIM2_Ticks:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:672    .data.Drum_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:806    .data.Guitar_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:940    .data.Piano_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1074   .data.Triangle_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1208   .data.Saw_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1342   .data.Sin_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1476   .bss.hdma_tim2_ch1:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1483   .bss.htim3:00000000 $d
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s 			page 28
+
+
+C:\Users\nhlan\AppData\Local\Temp\ccLqDrqI.s:1490   .bss.htim2:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_Init
+HAL_GPIO_WritePin
+HAL_NVIC_SetPriority
+HAL_NVIC_EnableIRQ
+HAL_GPIO_EXTI_IRQHandler
+HAL_GetTick
+HAL_DMA_Abort_IT
+HAL_DMA_Start_IT
+lcd_command
+lcd_putstring
+HAL_TIM_Base_Init
+HAL_TIM_ConfigClockSource
+HAL_TIM_OC_Init
+HAL_TIMEx_MasterConfigSynchronization
+HAL_TIM_OC_ConfigChannel
+HAL_DMA_Init
+HAL_TIM_PWM_Init
+HAL_TIM_PWM_ConfigChannel
+HAL_TIM_MspPostInit
+memset
+HAL_RCC_OscConfig
+HAL_RCC_ClockConfig
+HAL_Init
+HAL_TIM_PWM_Start
+HAL_TIM_OC_Start
+init_LCD

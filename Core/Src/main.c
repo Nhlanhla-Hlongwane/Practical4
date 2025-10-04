@@ -36,7 +36,7 @@
 // TODO: Add values for below variables
 #define NS 128        // Number of samples in LUT
 #define TIM2CLK 16000000  // STM Clock frequency: Hint You might want to check the ioc file
-#define F_SIGNAL 1000 	// Frequency of output analog signal
+#define F_SIGNAL 5000 	// Frequency of output analog signal
 
 /* USER CODE END PD */
 
@@ -49,6 +49,7 @@
 TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 DMA_HandleTypeDef hdma_tim2_ch1;
+
 
 /* USER CODE BEGIN PV */
 // TODO: Add code for global variables, including LUTs
@@ -64,8 +65,7 @@ uint32_t Drum_LUT[] = { 2047, 3396, 1864, 2110, 2063, 3400, 1893, 1933, 2086, 21
 
 ///hhj
 // TODO: Equation to calculate TIM2_Ticks
-uint32_t TIM2_Ticks = (TIM2CLK / (NS * F_SIGNAL))  //
-; // How often to write new LUT value
+uint32_t TIM2_Ticks = (TIM2CLK / (NS * F_SIGNAL))  ; // How often to write new LUT value
 uint32_t DestAddress = (uint32_t) &(TIM3->CCR3); // Write LUT TO TIM3->CCR3 to modify PWM duty cycle
 
 
@@ -126,7 +126,7 @@ int main(void)
   // TODO: Start TIM2 in Output Compare (OC) mode on channel 1
   HAL_TIM_OC_Start(&htim2,TIM_CHANNEL_1);
   // TODO: Start DMA in IT mode on TIM2->CH1. Source is LUT and Dest is TIM3->CCR3; start with Sine LUT
- HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)Sin_LUT, (uint32_t)&htim2.Instance->CCR1, NS);
+ HAL_DMA_Start_IT(&hdma_tim2_ch1, (uint32_t)Sin_LUT, DestAddress , NS);
 
   // TODO: Write current waveform to LCD(Sine is the first waveform)
  init_LCD();
@@ -458,7 +458,7 @@ HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0); // Clear interrupt
                          NS);
 
         __HAL_TIM_ENABLE_DMA(&htim2, TIM_DMA_CC1);
-
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
         // Update LCD
         lcd_command(CLEAR);
         lcd_command(CURSOR_HOME);
