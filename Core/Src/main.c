@@ -403,7 +403,8 @@ static void MX_GPIO_Init(void)
 }
 volatile uint32_t lastDebounceTick = 0;
 #define DEBOUNCE_DELAY 200  // ms
-extern uint32_t Sin_LUT[NS];
+//extern uint32_t Sin_LUT[NS];
+
 // Add other LUTs here
 typedef enum {
     WAVE_SINE = 0,
@@ -420,7 +421,7 @@ volatile WaveformType currentWave = WAVE_SINE;
 uint32_t* waveforms[WAVE_COUNT] = {
     Sin_LUT,     // WAVE_SINE
     Saw_LUT,     // WAVE_SAW
-    Triangle_LUT,     // WAVE_TRIANGLE
+    Triangle_LUT, // WAVE_TRIANGLE
     Piano_LUT,   // WAVE_PIANO
     Guitar_LUT,  // WAVE_GUITAR
     Drum_LUT     // WAVE_DRUM
