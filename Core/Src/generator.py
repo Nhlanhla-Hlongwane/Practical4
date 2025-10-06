@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-N = 128
+N = 256
 max_val = 4095
 
 # Sine LUT
