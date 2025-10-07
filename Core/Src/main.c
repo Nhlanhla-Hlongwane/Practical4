@@ -35,8 +35,8 @@
 /* USER CODE BEGIN PD */
 // TODO: Add values for below variables
 #define NS 128 // Number of samples in LUT
-#define TIM2CLK 8000000  // STM Clock frequency: Hint You might want to check the ioc file
-#define F_SIGNAL 1// Frequency of output analog signal
+#define TIM2CLK 16000000  // STM Clock frequency: Hint You might want to check the ioc file
+#define F_SIGNAL 172// Frequency of output analog signal
 
 /* USER CODE END PD */
 
@@ -519,7 +519,7 @@ int main(void)
   // TODO: Write current waveform to LCD(Sine is the first waveform)
  init_LCD();
   lcd_command(CLEAR);
-  lcd_command(CURSOR_HOME);
+  lcd_command(CURSOR_HOME)  ;
   lcd_putstring("Waveform: ");
   lcd_command(LINE_TWO);
   lcd_putstring("Sine");
