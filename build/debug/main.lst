@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
   29:Core/Src/main.c **** /* Private typedef -----------------------------------------------------------*/
   30:Core/Src/main.c **** /* USER CODE BEGIN PTD */
   31:Core/Src/main.c **** 
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 2
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 2
 
 
   32:Core/Src/main.c **** /* USER CODE END PTD */
@@ -66,9 +66,9 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
   34:Core/Src/main.c **** /* Private define ------------------------------------------------------------*/
   35:Core/Src/main.c **** /* USER CODE BEGIN PD */
   36:Core/Src/main.c **** // TODO: Add values for below variables
-  37:Core/Src/main.c **** #define NS 128 // Number of samples in LUT
+  37:Core/Src/main.c **** #define NS 1024 // Number of samples in LUT
   38:Core/Src/main.c **** #define TIM2CLK 16000000  // STM Clock frequency: Hint You might want to check the ioc file
-  39:Core/Src/main.c **** #define F_SIGNAL 172// Frequency of output analog signal
+  39:Core/Src/main.c **** #define F_SIGNAL 5000// Frequency of output analog signal
   40:Core/Src/main.c **** 
   41:Core/Src/main.c **** /* USER CODE END PD */
   42:Core/Src/main.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
   86:Core/Src/main.c ****   2090,   2002,   2038,   2064,   2028,   2038,   2046,   2036,
   87:Core/Src/main.c ****   2060,   2040,   2045,   2043,   2067,   2026,   2054,   2032,
   88:Core/Src/main.c ****   2069,   2027,   1956,   2340,   2323,   1851,   2033,   1993,
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 3
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 3
 
 
   89:Core/Src/main.c ****   1944,   2032,   2055,   2060,   2040,   2057,   2045,   2042,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  143:Core/Src/main.c ****   2053,   2045,   2056,   2041,   2044,   2045,   2045,   2053,
  144:Core/Src/main.c ****   2043,   2635,   1906,   2004,   1840,   2174,   2079,   2073,
  145:Core/Src/main.c ****   2019,   2036,   2062,   2090,   2040,   2047,   2055,   2042,
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 4
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 4
 
 
  146:Core/Src/main.c ****   2049,   2047,   2022,   2040,   2053,   2071,   2039,   2037,
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  200:Core/Src/main.c ****   1767,   1965,   1932,   1950,   1822,   1630,   1768,   1991,
  201:Core/Src/main.c ****   2211,   1879,   1844,   1964,   1783,   1957,   1934,   1824, 
  202:Core/Src/main.c ****   1861,   1826,   1876,   1896,   2140,   1627,   2179,   1654,
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 5
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 5
 
 
  203:Core/Src/main.c ****   2026,   1869,   1851,   2778,   1532,   1823,   1824,   1633,
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  257:Core/Src/main.c ****   1803,   1939,   1487,   1844,   2238,   1930,   1978,   1938,
  258:Core/Src/main.c ****   1894,   2067,   1759,   1915,   1891,   1874,   1756,   1993,
  259:Core/Src/main.c ****   1913,   1889,   1929,   1916,   1939,   1860,   1898,   1894,
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 6
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 6
 
 
  260:Core/Src/main.c ****   1924,   1784,   2116,   1908,   1846,   1970,   1836,   1934,
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  314:Core/Src/main.c ****   1960,   1862,   1838,   2087,   1778,   2024,   1729,   1931,
  315:Core/Src/main.c ****   1929,   1934,   1892,   1861,   1901,   1943,   1886,   1892,
  316:Core/Src/main.c ****   1963,   2004,   1462,   1824,   2000,   1952,   2257,   1722,
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 7
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 7
 
 
  317:Core/Src/main.c ****   2010,   1883,   1833,   1962,   1822,   2101,   1853,   1792,
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  371:Core/Src/main.c ****   2033,   2033,   1992,   1980,   1954,   1961,   1978,   1978,
  372:Core/Src/main.c ****   1983,   1968,   1952,   1946,   1937,   1856,   2155,   1996,
  373:Core/Src/main.c ****   2015,   1916,   1751,   2224,   1900,   2007,   2075,   1784,
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 8
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 8
 
 
  374:Core/Src/main.c ****   2138,   1892,   2058,   2035,   1805,   2115,   1896,   2043,
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  428:Core/Src/main.c ****   2192,   2457,   1959,   1900,   1930,   2050,   1906,   2001,
  429:Core/Src/main.c ****   1958,   1946,   1996,   1935,   1973,   1954,   1942,   2002,
  430:Core/Src/main.c ****   1971,   1963,   1970,   1963,   1976,   1993,   1987,   1974,
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 9
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 9
 
 
  431:Core/Src/main.c ****   1972,   1982,   1947,   1986,   1971,   1978,   1975,   1946,
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  485:Core/Src/main.c **** 
  486:Core/Src/main.c ****   /* USER CODE END 1 */
  487:Core/Src/main.c **** 
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 10
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 10
 
 
  488:Core/Src/main.c ****   /* MCU Configuration--------------------------------------------------------*/
@@ -575,7 +575,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  519:Core/Src/main.c ****   // TODO: Write current waveform to LCD(Sine is the first waveform)
  520:Core/Src/main.c ****  init_LCD();
  521:Core/Src/main.c ****   lcd_command(CLEAR);
- 522:Core/Src/main.c ****   lcd_command(CURSOR_HOME);
+ 522:Core/Src/main.c ****   lcd_command(CURSOR_HOME)  ;
  523:Core/Src/main.c ****   lcd_putstring("Waveform: ");
  524:Core/Src/main.c ****   lcd_command(LINE_TWO);
  525:Core/Src/main.c ****   lcd_putstring("Sine");
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  542:Core/Src/main.c **** }
  543:Core/Src/main.c **** 
  544:Core/Src/main.c **** /**
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 11
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 11
 
 
  545:Core/Src/main.c ****   * @brief System Clock Configuration
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  599:Core/Src/main.c ****   TIM_OC_InitTypeDef sConfigOC = {0};
  600:Core/Src/main.c **** 
  601:Core/Src/main.c ****   /* USER CODE BEGIN TIM2_Init 1 */
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 12
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 12
 
 
  602:Core/Src/main.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  656:Core/Src/main.c ****   }
  657:Core/Src/main.c **** 
  658:Core/Src/main.c ****   /* Link DMA handle to TIM2 handle */
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 13
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 13
 
 
  659:Core/Src/main.c ****   __HAL_LINKDMA(&htim2, hdma[TIM_DMA_ID_CC1], hdma_tim2_ch1);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  713:Core/Src/main.c ****   {
  714:Core/Src/main.c ****     Error_Handler();
  715:Core/Src/main.c ****   }
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 14
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 14
 
 
  716:Core/Src/main.c ****   /* USER CODE BEGIN TIM3_Init 2 */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
   51 000e 0594     		str	r4, [sp, #20]
   52 0010 0694     		str	r4, [sp, #24]
   53 0012 0794     		str	r4, [sp, #28]
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 15
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 15
 
 
  747:Core/Src/main.c ****   /* USER CODE BEGIN MX_GPIO_Init_1 */
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  100 0050 029B     		ldr	r3, [sp, #8]
  101              	.LBE6:
  102              		.loc 1 754 3 view .LVU20
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 16
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 16
 
 
  755:Core/Src/main.c **** 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  774:Core/Src/main.c ****   // Set all LCD pins LOW initially
  775:Core/Src/main.c ****   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_14 | GPIO_PIN_15, GPIO_PIN_RESET);
  138              		.loc 1 775 3 view .LVU34
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 17
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 17
 
 
  139 008c 2246     		mov	r2, r4
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  178 00c6 0620     		movs	r0, #6
  179 00c8 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
  180              	.LVL8:
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 18
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 18
 
 
  791:Core/Src/main.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  228 001a 019B     		ldr	r3, [sp, #4]
  229              	.LBE7:
  730:Core/Src/main.c **** 
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 19
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 19
 
 
  230              		.loc 1 730 3 view .LVU53
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  810:Core/Src/main.c **** // enum to track which waveform is active
  811:Core/Src/main.c **** uint32_t* waveforms[WAVE_COUNT] = {
  812:Core/Src/main.c ****     Sin_LUT,     // WAVE_SINE
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 20
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 20
 
 
  813:Core/Src/main.c ****     Saw_LUT,     // WAVE_SAW
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  839:Core/Src/main.c ****         __HAL_TIM_DISABLE_DMA(&htim2, TIM_DMA_CC1);
  840:Core/Src/main.c ****         HAL_DMA_Abort_IT(&hdma_tim2_ch1);
  841:Core/Src/main.c **** 
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 21
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 21
 
 
  842:Core/Src/main.c ****         // Move to next waveform
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  324 0044 DBB2     		uxtb	r3, r3
  843:Core/Src/main.c **** 
  325              		.loc 1 843 21 view .LVU73
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 22
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 22
 
 
  326 0046 2370     		strb	r3, [r4]
@@ -1269,61 +1269,61 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  329 0048 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
  845:Core/Src/main.c **** 
  330              		.loc 1 845 7 view .LVU76
- 331 004a 8023     		movs	r3, #128
- 332 004c 174A     		ldr	r2, .L13+20
- 333 004e 1268     		ldr	r2, [r2]
- 334 0050 1749     		ldr	r1, .L13+24
- 335 0052 51F82010 		ldr	r1, [r1, r0, lsl #2]
- 336 0056 3046     		mov	r0, r6
- 337 0058 FFF7FEFF 		bl	HAL_DMA_Start_IT
+ 331 004a 4FF48063 		mov	r3, #1024
+ 332 004e 174A     		ldr	r2, .L13+20
+ 333 0050 1268     		ldr	r2, [r2]
+ 334 0052 1749     		ldr	r1, .L13+24
+ 335 0054 51F82010 		ldr	r1, [r1, r0, lsl #2]
+ 336 0058 3046     		mov	r0, r6
+ 337 005a FFF7FEFF 		bl	HAL_DMA_Start_IT
  338              	.LVL17:
  847:Core/Src/main.c ****         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
  339              		.loc 1 847 9 is_stmt 1 view .LVU77
- 340 005c 2A68     		ldr	r2, [r5]
- 341 005e D368     		ldr	r3, [r2, #12]
- 342 0060 43F40073 		orr	r3, r3, #512
- 343 0064 D360     		str	r3, [r2, #12]
+ 340 005e 2A68     		ldr	r2, [r5]
+ 341 0060 D368     		ldr	r3, [r2, #12]
+ 342 0062 43F40073 		orr	r3, r3, #512
+ 343 0066 D360     		str	r3, [r2, #12]
  848:Core/Src/main.c ****         // Update LCD
  344              		.loc 1 848 9 view .LVU78
- 345 0066 0122     		movs	r2, #1
- 346 0068 2021     		movs	r1, #32
- 347 006a 1248     		ldr	r0, .L13+28
- 348 006c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 345 0068 0122     		movs	r2, #1
+ 346 006a 2021     		movs	r1, #32
+ 347 006c 1148     		ldr	r0, .L13+28
+ 348 006e FFF7FEFF 		bl	HAL_GPIO_WritePin
  349              	.LVL18:
  850:Core/Src/main.c ****         lcd_command(CURSOR_HOME);
  350              		.loc 1 850 9 view .LVU79
- 351 0070 0120     		movs	r0, #1
- 352 0072 FFF7FEFF 		bl	lcd_command
+ 351 0072 0120     		movs	r0, #1
+ 352 0074 FFF7FEFF 		bl	lcd_command
  353              	.LVL19:
  851:Core/Src/main.c ****         lcd_putstring("Waveform:");
  354              		.loc 1 851 9 view .LVU80
- 355 0076 0220     		movs	r0, #2
- 356 0078 FFF7FEFF 		bl	lcd_command
+ 355 0078 0220     		movs	r0, #2
+ 356 007a FFF7FEFF 		bl	lcd_command
  357              	.LVL20:
  852:Core/Src/main.c ****         lcd_command(LINE_TWO);
  358              		.loc 1 852 9 view .LVU81
- 359 007c 0E48     		ldr	r0, .L13+32
- 360 007e FFF7FEFF 		bl	lcd_putstring
+ 359 007e 0E48     		ldr	r0, .L13+32
+ 360 0080 FFF7FEFF 		bl	lcd_putstring
  361              	.LVL21:
  853:Core/Src/main.c ****         lcd_putstring((char*)waveNames[currentWave]);
  362              		.loc 1 853 9 view .LVU82
- 363 0082 C020     		movs	r0, #192
- 364 0084 FFF7FEFF 		bl	lcd_command
+ 363 0084 C020     		movs	r0, #192
+ 364 0086 FFF7FEFF 		bl	lcd_command
  365              	.LVL22:
  854:Core/Src/main.c ****     }
  366              		.loc 1 854 9 view .LVU83
- 367 0088 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
- 368 008a 0C4B     		ldr	r3, .L13+36
- 369 008c 53F82200 		ldr	r0, [r3, r2, lsl #2]
- 370 0090 FFF7FEFF 		bl	lcd_putstring
+ 367 008a 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
+ 368 008c 0B4B     		ldr	r3, .L13+36
+ 369 008e 53F82200 		ldr	r0, [r3, r2, lsl #2]
+ 370 0092 FFF7FEFF 		bl	lcd_putstring
  371              	.LVL23:
  372              		.loc 1 856 1 is_stmt 0 view .LVU84
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 23
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 23
 
 
- 373 0094 BFE7     		b	.L9
+ 373 0096 BEE7     		b	.L9
  374              	.L14:
- 375 0096 00BF     		.align	2
+ 375              		.align	2
  376              	.L13:
  377 0098 00000000 		.word	lastDebounceTick
  378 009c 00000000 		.word	htim2
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
   10:Drivers/CMSIS/Include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
   11:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   12:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Licensed under the Apache License, Version 2.0 (the License); you may
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 24
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 24
 
 
   13:Drivers/CMSIS/Include/cmsis_gcc.h ****  * not use this file except in compliance with the License.
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
   67:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
   68:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
   69:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 25
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 25
 
 
   70:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32        /* deprecated */
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  124:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  125:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Initializes data and bss sections
  126:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details This default implementations initialized all data and additional bss
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 26
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 26
 
 
  127:Drivers/CMSIS/Include/cmsis_gcc.h ****            sections relying on .copy.table and .zero.table specified properly
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  181:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE_ATTRIBUTE
  182:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE_ATTRIBUTE  __attribute__((used, section(".vectors")))
  183:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 27
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 27
 
 
  184:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  238:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Wait For Event
  239:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Wait For Event is a hint instruction that permits the processor to enter
  240:Drivers/CMSIS/Include/cmsis_gcc.h ****            a low-power state until one of a number of events occurs.
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 28
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 28
 
 
  241:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  295:Drivers/CMSIS/Include/cmsis_gcc.h ****   return __builtin_bswap32(value);
  296:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  297:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 29
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 29
 
 
  298:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  352:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
  353:Drivers/CMSIS/Include/cmsis_gcc.h ****   return (op1 >> op2) | (op1 << (32U - op2));
  354:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 30
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 30
 
 
  355:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  409:Drivers/CMSIS/Include/cmsis_gcc.h ****      optimisations using the logic "value was passed to __builtin_clz, so it
  410:Drivers/CMSIS/Include/cmsis_gcc.h ****      is non-zero".
  411:Drivers/CMSIS/Include/cmsis_gcc.h ****      ARM GCC 7.3 and possibly earlier will optimise this test away, leaving a
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 31
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 31
 
 
  412:Drivers/CMSIS/Include/cmsis_gcc.h ****      single CLZ instruction.
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  466:Drivers/CMSIS/Include/cmsis_gcc.h ****    return ((uint16_t) result);    /* Add explicit type cast here */
  467:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  468:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 32
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 32
 
 
  469:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  523:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to location
  524:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          0  Function succeeded
  525:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          1  Function failed
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 33
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 33
 
 
  526:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  580:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t __RES, __ARG1 = (ARG1); \
  581:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("usat %0, %1, %2" : "=r" (__RES) :  "I" (ARG2), "r" (__ARG1) : "cc" ); \
  582:Drivers/CMSIS/Include/cmsis_gcc.h ****   __RES; \
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 34
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 34
 
 
  583:Drivers/CMSIS/Include/cmsis_gcc.h ****  })
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  637:Drivers/CMSIS/Include/cmsis_gcc.h ****     /* Prior to GCC 4.8, "Q" will be expanded to [rx, #0] which is not
  638:Drivers/CMSIS/Include/cmsis_gcc.h ****        accepted by assembler. So has to use following less efficient pattern.
  639:Drivers/CMSIS/Include/cmsis_gcc.h ****     */
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 35
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 35
 
 
  640:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrht %0, [%1]" : "=r" (result) : "r" (ptr) : "memory" );
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  694:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  695:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  696:Drivers/CMSIS/Include/cmsis_gcc.h **** #else  /* ((defined (__ARM_ARCH_7M__      ) && (__ARM_ARCH_7M__      == 1)) || \
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 36
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 36
 
 
  697:Drivers/CMSIS/Include/cmsis_gcc.h ****            (defined (__ARM_ARCH_7EM__     ) && (__ARM_ARCH_7EM__     == 1)) || \
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  751:Drivers/CMSIS/Include/cmsis_gcc.h ****            (defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1))    ) */
  752:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  753:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 37
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 37
 
 
  754:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)) || \
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  808:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  809:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("stlb %1, %0" : "=Q" (*ptr) : "r" ((uint32_t)value) : "memory" );
  810:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 38
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 38
 
 
  811:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  865:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  866:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  867:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 39
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 39
 
 
  868:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Load-Acquire Exclusive (32 bit)
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  922:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          1  Function failed
  923:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  924:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __STLEX(uint32_t value, volatile uint32_t *ptr)
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 40
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 40
 
 
  925:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  422              		.loc 1 870 3 view .LVU90
  868:Core/Src/main.c ****   while (1)
  423              		.loc 1 868 9 view .LVU91
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 41
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 41
 
 
  424 0002 FEE7     		b	.L16
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  470              		.loc 1 605 3 is_stmt 1 view .LVU101
  605:Core/Src/main.c ****   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
  471              		.loc 1 605 24 is_stmt 0 view .LVU102
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 42
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 42
 
 
  472 0028 4360     		str	r3, [r0, #4]
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  508              		.loc 1 619 7 is_stmt 0 view .LVU120
  509 0050 2B48     		ldr	r0, .L31
  510 0052 FFF7FEFF 		bl	HAL_TIM_OC_Init
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 43
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 43
 
 
  511              	.LVL26:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  634:Core/Src/main.c ****   {
  548              		.loc 1 634 3 is_stmt 1 view .LVU138
  634:Core/Src/main.c ****   {
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 44
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 44
 
 
  549              		.loc 1 634 7 is_stmt 0 view .LVU139
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  645:Core/Src/main.c ****   hdma_tim2_ch1.Init.MemInc = DMA_MINC_ENABLE;        // Memory address increments
  589              		.loc 1 645 32 is_stmt 0 view .LVU154
  590 00b0 C360     		str	r3, [r0, #12]
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 45
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 45
 
 
  646:Core/Src/main.c ****   hdma_tim2_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  659:Core/Src/main.c ****   /* USER CODE END TIM2_Init 2 */
  627              		.loc 1 659 3 view .LVU173
  662:Core/Src/main.c **** 
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 46
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 46
 
 
  628              		.loc 1 662 1 is_stmt 0 view .LVU174
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  670:Core/Src/main.c **** 
  678              		.loc 1 670 1 view -0
  679              		.cfi_startproc
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 47
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 47
 
 
  680              		@ args = 0, pretend = 0, frame = 56
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  720 002a 40F6FF72 		movw	r2, #4095
  721 002e C260     		str	r2, [r0, #12]
  687:Core/Src/main.c ****   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 48
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 48
 
 
  722              		.loc 1 687 3 is_stmt 1 view .LVU196
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  758              		.loc 1 703 33 is_stmt 0 view .LVU214
  759 0056 0993     		str	r3, [sp, #36]
  704:Core/Src/main.c ****   {
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 49
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 49
 
 
  760              		.loc 1 704 3 is_stmt 1 view .LVU215
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  799              		@ sp needed
  800 0082 5DF804FB 		ldr	pc, [sp], #4
  801              	.L40:
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 50
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 50
 
 
  802              		.cfi_restore_state
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  850              		.loc 1 550 22 is_stmt 0 view .LVU238
  851 0004 07AC     		add	r4, sp, #28
  852 0006 3422     		movs	r2, #52
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 51
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 51
 
 
  853 0008 0021     		movs	r1, #0
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  895 0048 0192     		str	r2, [sp, #4]
  556:Core/Src/main.c **** 
  896              		.loc 1 556 3 view .LVU251
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 52
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 52
 
 
  897 004a 019A     		ldr	r2, [sp, #4]
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  576:Core/Src/main.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
  933              		.loc 1 576 3 is_stmt 1 view .LVU270
  576:Core/Src/main.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 53
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 53
 
 
  934              		.loc 1 576 36 is_stmt 0 view .LVU271
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  978              		.global	main
  979              		.syntax unified
  980              		.thumb
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 54
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 54
 
 
  981              		.thumb_func
@@ -3221,63 +3221,63 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  513:Core/Src/main.c ****   // TODO: Start TIM2 in Output Compare (OC) mode on channel 1
  1012              		.loc 1 513 3 view .LVU287
  1013 001a 0821     		movs	r1, #8
- 1014 001c 1248     		ldr	r0, .L58
+ 1014 001c 1348     		ldr	r0, .L58
  1015 001e FFF7FEFF 		bl	HAL_TIM_PWM_Start
  1016              	.LVL58:
  515:Core/Src/main.c ****   // TODO: Start DMA in IT mode on TIM2->CH1. Source is LUT and Dest is TIM3->CCR3; start with Sine
  1017              		.loc 1 515 3 view .LVU288
- 1018 0022 124C     		ldr	r4, .L58+4
+ 1018 0022 134C     		ldr	r4, .L58+4
  1019 0024 0021     		movs	r1, #0
  1020 0026 2046     		mov	r0, r4
  1021 0028 FFF7FEFF 		bl	HAL_TIM_OC_Start
  1022              	.LVL59:
  517:Core/Src/main.c **** 
  1023              		.loc 1 517 2 view .LVU289
- 1024 002c 8023     		movs	r3, #128
- 1025 002e 104A     		ldr	r2, .L58+8
- 1026 0030 1268     		ldr	r2, [r2]
- 1027 0032 1049     		ldr	r1, .L58+12
- 1028 0034 1048     		ldr	r0, .L58+16
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 55
+ 1024 002c 4FF48063 		mov	r3, #1024
+ 1025 0030 104A     		ldr	r2, .L58+8
+ 1026 0032 1268     		ldr	r2, [r2]
+ 1027 0034 1049     		ldr	r1, .L58+12
+ 1028 0036 1148     		ldr	r0, .L58+16
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 55
 
 
- 1029 0036 FFF7FEFF 		bl	HAL_DMA_Start_IT
+ 1029 0038 FFF7FEFF 		bl	HAL_DMA_Start_IT
  1030              	.LVL60:
  520:Core/Src/main.c ****   lcd_command(CLEAR);
  1031              		.loc 1 520 2 view .LVU290
- 1032 003a FFF7FEFF 		bl	init_LCD
+ 1032 003c FFF7FEFF 		bl	init_LCD
  1033              	.LVL61:
- 521:Core/Src/main.c ****   lcd_command(CURSOR_HOME);
+ 521:Core/Src/main.c ****   lcd_command(CURSOR_HOME)  ;
  1034              		.loc 1 521 3 view .LVU291
- 1035 003e 0120     		movs	r0, #1
- 1036 0040 FFF7FEFF 		bl	lcd_command
+ 1035 0040 0120     		movs	r0, #1
+ 1036 0042 FFF7FEFF 		bl	lcd_command
  1037              	.LVL62:
  522:Core/Src/main.c ****   lcd_putstring("Waveform: ");
  1038              		.loc 1 522 3 view .LVU292
- 1039 0044 0220     		movs	r0, #2
- 1040 0046 FFF7FEFF 		bl	lcd_command
+ 1039 0046 0220     		movs	r0, #2
+ 1040 0048 FFF7FEFF 		bl	lcd_command
  1041              	.LVL63:
  523:Core/Src/main.c ****   lcd_command(LINE_TWO);
  1042              		.loc 1 523 3 view .LVU293
- 1043 004a 0C48     		ldr	r0, .L58+20
- 1044 004c FFF7FEFF 		bl	lcd_putstring
+ 1043 004c 0C48     		ldr	r0, .L58+20
+ 1044 004e FFF7FEFF 		bl	lcd_putstring
  1045              	.LVL64:
  524:Core/Src/main.c ****   lcd_putstring("Sine");
  1046              		.loc 1 524 3 view .LVU294
- 1047 0050 C020     		movs	r0, #192
- 1048 0052 FFF7FEFF 		bl	lcd_command
+ 1047 0052 C020     		movs	r0, #192
+ 1048 0054 FFF7FEFF 		bl	lcd_command
  1049              	.LVL65:
  525:Core/Src/main.c **** 
  1050              		.loc 1 525 3 view .LVU295
- 1051 0056 0A48     		ldr	r0, .L58+24
- 1052 0058 FFF7FEFF 		bl	lcd_putstring
+ 1051 0058 0A48     		ldr	r0, .L58+24
+ 1052 005a FFF7FEFF 		bl	lcd_putstring
  1053              	.LVL66:
  529:Core/Src/main.c **** 
  1054              		.loc 1 529 1 view .LVU296
- 1055 005c 2268     		ldr	r2, [r4]
- 1056 005e D368     		ldr	r3, [r2, #12]
- 1057 0060 43F40073 		orr	r3, r3, #512
- 1058 0064 D360     		str	r3, [r2, #12]
+ 1055 005e 2268     		ldr	r2, [r4]
+ 1056 0060 D368     		ldr	r3, [r2, #12]
+ 1057 0062 43F40073 		orr	r3, r3, #512
+ 1058 0066 D360     		str	r3, [r2, #12]
  1059              	.L56:
  535:Core/Src/main.c ****   {
  1060              		.loc 1 535 3 view .LVU297
@@ -3285,20 +3285,20 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1061              		.loc 1 540 3 view .LVU298
  535:Core/Src/main.c ****   {
  1062              		.loc 1 535 9 view .LVU299
- 1063 0066 FEE7     		b	.L56
+ 1063 0068 FEE7     		b	.L56
  1064              	.L59:
- 1065              		.align	2
+ 1065 006a 00BF     		.align	2
  1066              	.L58:
- 1067 0068 00000000 		.word	htim3
- 1068 006c 00000000 		.word	htim2
- 1069 0070 00000000 		.word	DestAddress
- 1070 0074 00000000 		.word	Sin_LUT
- 1071 0078 00000000 		.word	hdma_tim2_ch1
- 1072 007c 00000000 		.word	.LC1
- 1073 0080 0C000000 		.word	.LC2
+ 1067 006c 00000000 		.word	htim3
+ 1068 0070 00000000 		.word	htim2
+ 1069 0074 00000000 		.word	DestAddress
+ 1070 0078 00000000 		.word	Sin_LUT
+ 1071 007c 00000000 		.word	hdma_tim2_ch1
+ 1072 0080 00000000 		.word	.LC1
+ 1073 0084 0C000000 		.word	.LC2
  1074              		.cfi_endproc
  1075              	.LFE137:
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 56
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 56
 
 
  1077              		.global	waveNames
@@ -3358,14 +3358,14 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1132              		.align	2
  1135              	DestAddress:
  1136 0000 3C040040 		.word	1073742908
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 57
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 57
 
 
  1137              		.global	TIM2_Ticks
  1138              		.section	.data.TIM2_Ticks,"aw"
  1139              		.align	2
  1142              	TIM2_Ticks:
- 1143 0000 D6020000 		.word	726
+ 1143 0000 03000000 		.word	3
  1144              		.global	Guitar_LUT
  1145              		.section	.data.Guitar_LUT,"aw"
  1146              		.align	2
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1195 00b4 03070000 		.word	1795
  1196 00b8 9C060000 		.word	1692
  1197 00bc 91080000 		.word	2193
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 58
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 58
 
 
  1198 00c0 4A080000 		.word	2122
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1252 0198 A2080000 		.word	2210
  1253 019c 9A070000 		.word	1946
  1254 01a0 2A070000 		.word	1834
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 59
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 59
 
 
  1255 01a4 74080000 		.word	2164
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1309 027c 55090000 		.word	2389
  1310 0280 3A080000 		.word	2106
  1311 0284 5E070000 		.word	1886
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 60
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 60
 
 
  1312 0288 0F070000 		.word	1807
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1366 0360 B7070000 		.word	1975
  1367 0364 AA070000 		.word	1962
  1368 0368 C1070000 		.word	1985
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 61
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 61
 
 
  1369 036c C1070000 		.word	1985
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1423 0444 81080000 		.word	2177
  1424 0448 53070000 		.word	1875
  1425 044c 06080000 		.word	2054
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 62
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 62
 
 
  1426 0450 CF070000 		.word	1999
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1480 0528 B2070000 		.word	1970
  1481 052c 7F070000 		.word	1919
  1482 0530 F1070000 		.word	2033
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 63
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 63
 
 
  1483 0534 AF070000 		.word	1967
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1537 060c 9A070000 		.word	1946
  1538 0610 91070000 		.word	1937
  1539 0614 40070000 		.word	1856
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 64
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 64
 
 
  1540 0618 6B080000 		.word	2155
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1594 06f0 86080000 		.word	2182
  1595 06f4 05060000 		.word	1541
  1596 06f8 34080000 		.word	2100
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 65
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 65
 
 
  1597 06fc E4060000 		.word	1764
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1651 07d4 00080000 		.word	2048
  1652 07d8 6F080000 		.word	2159
  1653 07dc 5F050000 		.word	1375
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 66
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 66
 
 
  1654 07e0 5D070000 		.word	1885
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1708 08b8 1D090000 		.word	2333
  1709 08bc C5080000 		.word	2245
  1710 08c0 D6070000 		.word	2006
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 67
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 67
 
 
  1711 08c4 0E070000 		.word	1806
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1765 099c B1070000 		.word	1969
  1766 09a0 BC060000 		.word	1724
  1767 09a4 C7080000 		.word	2247
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 68
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 68
 
 
  1768 09a8 7B070000 		.word	1915
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1822 0a80 DC070000 		.word	2012
  1823 0a84 FE080000 		.word	2302
  1824 0a88 7D080000 		.word	2173
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 69
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 69
 
 
  1825 0a8c A1070000 		.word	1953
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1879 0b64 A2070000 		.word	1954
  1880 0b68 B3070000 		.word	1971
  1881 0b6c 8D070000 		.word	1933
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 70
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 70
 
 
  1882 0b70 A2070000 		.word	1954
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1936 0c48 D3070000 		.word	2003
  1937 0c4c 03070000 		.word	1795
  1938 0c50 14080000 		.word	2068
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 71
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 71
 
 
  1939 0c54 2D070000 		.word	1837
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  1993 0d2c 8F070000 		.word	1935
  1994 0d30 B5070000 		.word	1973
  1995 0d34 A2070000 		.word	1954
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 72
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 72
 
 
  1996 0d38 96070000 		.word	1942
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2050 0e10 ED080000 		.word	2285
  2051 0e14 47060000 		.word	1607
  2052 0e18 D8070000 		.word	2008
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 73
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 73
 
 
  2053 0e1c FC070000 		.word	2044
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2107 0ef4 48070000 		.word	1864
  2108 0ef8 FB050000 		.word	1531
  2109 0efc D3080000 		.word	2259
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 74
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 74
 
 
  2110 0f00 AA070000 		.word	1962
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2164 0fd8 64080000 		.word	2148
  2165 0fdc D2060000 		.word	1746
  2166 0fe0 59060000 		.word	1625
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 75
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 75
 
 
  2167 0fe4 88080000 		.word	2184
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2223 00a4 78070000 		.word	1912
  2224 00a8 71070000 		.word	1905
  2225 00ac 51070000 		.word	1873
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 76
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 76
 
 
  2226 00b0 7A070000 		.word	1914
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2280 0188 94080000 		.word	2196
  2281 018c 04050000 		.word	1284
  2282 0190 54060000 		.word	1620
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 77
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 77
 
 
  2283 0194 22080000 		.word	2082
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2337 026c 88070000 		.word	1928
  2338 0270 50070000 		.word	1872
  2339 0274 6F070000 		.word	1903
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 78
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 78
 
 
  2340 0278 5D070000 		.word	1885
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2394 0350 09070000 		.word	1801
  2395 0354 33070000 		.word	1843
  2396 0358 BC080000 		.word	2236
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 79
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 79
 
 
  2397 035c 08060000 		.word	1544
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2451 0434 7B060000 		.word	1659
  2452 0438 3F080000 		.word	2111
  2453 043c 9F070000 		.word	1951
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 80
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 80
 
 
  2454 0440 8A070000 		.word	1930
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2508 0518 68090000 		.word	2408
  2509 051c 52060000 		.word	1618
  2510 0520 9F070000 		.word	1951
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 81
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 81
 
 
  2511 0524 06080000 		.word	2054
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2565 05fc E4060000 		.word	1764
  2566 0600 EF070000 		.word	2031
  2567 0604 F4060000 		.word	1780
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 82
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 82
 
 
  2568 0608 9A070000 		.word	1946
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2622 06e0 99060000 		.word	1689
  2623 06e4 88060000 		.word	1672
  2624 06e8 1C070000 		.word	1820
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 83
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 83
 
 
  2625 06ec C6080000 		.word	2246
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2679 07c4 28060000 		.word	1576
  2680 07c8 20090000 		.word	2336
  2681 07cc B1050000 		.word	1457
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 84
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 84
 
 
  2682 07d0 1E080000 		.word	2078
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2736 08a8 7A070000 		.word	1914
  2737 08ac 2A070000 		.word	1834
  2738 08b0 4B070000 		.word	1867
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 85
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 85
 
 
  2739 08b4 AE070000 		.word	1966
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2793 098c 93080000 		.word	2195
  2794 0990 3E050000 		.word	1342
  2795 0994 25060000 		.word	1573
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 86
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 86
 
 
  2796 0998 CA070000 		.word	1994
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2850 0a70 58070000 		.word	1880
  2851 0a74 81070000 		.word	1921
  2852 0a78 5D070000 		.word	1885
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 87
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 87
 
 
  2853 0a7c 6B070000 		.word	1899
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2907 0b54 19070000 		.word	1817
  2908 0b58 B2070000 		.word	1970
  2909 0b5c 0F070000 		.word	1807
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 88
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 88
 
 
  2910 0b60 97080000 		.word	2199
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  2964 0c38 FC060000 		.word	1788
  2965 0c3c 58070000 		.word	1880
  2966 0c40 7D070000 		.word	1917
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 89
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 89
 
 
  2967 0c44 B6070000 		.word	1974
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3021 0d1c 24070000 		.word	1828
  3022 0d20 D3060000 		.word	1747
  3023 0d24 B3070000 		.word	1971
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 90
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 90
 
 
  3024 0d28 1C060000 		.word	1564
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3078 0e00 15070000 		.word	1813
  3079 0e04 32070000 		.word	1842
  3080 0e08 3A070000 		.word	1850
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 91
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 91
 
 
  3081 0e0c 0D080000 		.word	2061
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3135 0ee4 FC050000 		.word	1532
  3136 0ee8 57070000 		.word	1879
  3137 0eec 1F080000 		.word	2079
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 92
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 92
 
 
  3138 0ef0 86070000 		.word	1926
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3192 0fc8 21060000 		.word	1569
  3193 0fcc 0C090000 		.word	2316
  3194 0fd0 D4050000 		.word	1492
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 93
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 93
 
 
  3195 0fd4 72080000 		.word	2162
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3251 0098 FF0F0000 		.word	4095
  3252 009c 02000000 		.word	2
  3253 00a0 0E0D0000 		.word	3342
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 94
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 94
 
 
  3254 00a4 DB050000 		.word	1499
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3308 017c FE070000 		.word	2046
  3309 0180 FC070000 		.word	2044
  3310 0184 05080000 		.word	2053
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 95
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 95
 
 
  3311 0188 3F070000 		.word	1855
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3365 0260 F4070000 		.word	2036
  3366 0264 0E080000 		.word	2062
  3367 0268 F7070000 		.word	2039
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 96
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 96
 
 
  3368 026c 00080000 		.word	2048
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3422 0344 D2070000 		.word	2002
  3423 0348 F6070000 		.word	2038
  3424 034c 10080000 		.word	2064
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 97
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 97
 
 
  3425 0350 EC070000 		.word	2028
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3479 0428 73080000 		.word	2163
  3480 042c A8070000 		.word	1960
  3481 0430 FF090000 		.word	2559
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 98
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 98
 
 
  3482 0434 09070000 		.word	1801
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3536 050c 52050000 		.word	1362
  3537 0510 F6050000 		.word	1526
  3538 0514 5B060000 		.word	1627
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 99
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 99
 
 
  3539 0518 79090000 		.word	2425
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3593 05f0 EE070000 		.word	2030
  3594 05f4 22080000 		.word	2082
  3595 05f8 EF070000 		.word	2031
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 100
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 100
 
 
  3596 05fc D0070000 		.word	2000
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3650 06d4 70080000 		.word	2160
  3651 06d8 F7070000 		.word	2039
  3652 06dc F1070000 		.word	2033
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 101
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 101
 
 
  3653 06e0 59080000 		.word	2137
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3707 07b8 09080000 		.word	2057
  3708 07bc FF070000 		.word	2047
  3709 07c0 FB070000 		.word	2043
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 102
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 102
 
 
  3710 07c4 2D040000 		.word	1069
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3764 089c 3C020000 		.word	572
  3765 08a0 1E070000 		.word	1822
  3766 08a4 68080000 		.word	2152
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 103
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 103
 
 
  3767 08a8 50070000 		.word	1872
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3821 0980 05080000 		.word	2053
  3822 0984 FF0F0000 		.word	4095
  3823 0988 C9080000 		.word	2249
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 104
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 104
 
 
  3824 098c E9090000 		.word	2537
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3878 0a64 FD070000 		.word	2045
  3879 0a68 08080000 		.word	2056
  3880 0a6c F9070000 		.word	2041
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 105
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 105
 
 
  3881 0a70 FC070000 		.word	2044
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3935 0b48 E5070000 		.word	2021
  3936 0b4c 0D080000 		.word	2061
  3937 0b50 0F080000 		.word	2063
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 106
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 106
 
 
  3938 0b54 00080000 		.word	2048
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  3992 0c2c 13050000 		.word	1299
  3993 0c30 140A0000 		.word	2580
  3994 0c34 F8070000 		.word	2040
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 107
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 107
 
 
  3995 0c38 6B070000 		.word	1899
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  4049 0d10 66050000 		.word	1382
  4050 0d14 BF080000 		.word	2239
  4051 0d18 68060000 		.word	1640
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 108
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 108
 
 
  4052 0d1c 89060000 		.word	1673
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  4106 0df4 04080000 		.word	2052
  4107 0df8 DC070000 		.word	2012
  4108 0dfc F6070000 		.word	2038
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 109
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 109
 
 
  4109 0e00 3D060000 		.word	1597
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  4163 0ed8 92070000 		.word	1938
  4164 0edc D3070000 		.word	2003
  4165 0ee0 53080000 		.word	2131
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 110
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 110
 
 
  4166 0ee4 CD070000 		.word	1997
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  4220 0fbc 29090000 		.word	2345
  4221 0fc0 FB0B0000 		.word	3067
  4222 0fc4 CF010000 		.word	463
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 111
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 111
 
 
  4223 0fc8 FF0F0000 		.word	4095
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  4279 008c BF080000 		.word	2239
  4280 0090 FF080000 		.word	2303
  4281 0094 3F090000 		.word	2367
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 112
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 112
 
 
  4282 0098 7F090000 		.word	2431
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  4336 0170 FF080000 		.word	2303
  4337 0174 BF080000 		.word	2239
  4338 0178 7F080000 		.word	2175
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 113
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 113
 
 
  4339 017c 3F080000 		.word	2111
@@ -6754,393 +6754,411 @@ ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 1
  4369 01f4 BF000000 		.word	191
  4370 01f8 7F000000 		.word	127
  4371 01fc 3F000000 		.word	63
- 4372              		.global	Saw_LUT
- 4373              		.section	.data.Saw_LUT,"aw"
- 4374              		.align	2
- 4377              	Saw_LUT:
- 4378 0000 00000000 		.word	0
- 4379 0004 1F000000 		.word	31
- 4380 0008 3F000000 		.word	63
- 4381 000c 5F000000 		.word	95
- 4382 0010 7F000000 		.word	127
- 4383 0014 9F000000 		.word	159
- 4384 0018 BF000000 		.word	191
- 4385 001c DF000000 		.word	223
- 4386 0020 FF000000 		.word	255
- 4387 0024 1F010000 		.word	287
- 4388 0028 3F010000 		.word	319
- 4389 002c 5F010000 		.word	351
- 4390 0030 7F010000 		.word	383
- 4391 0034 9F010000 		.word	415
- 4392 0038 BF010000 		.word	447
- 4393 003c DF010000 		.word	479
- 4394 0040 FF010000 		.word	511
- 4395 0044 1F020000 		.word	543
- 4396 0048 3F020000 		.word	575
- 4397 004c 5F020000 		.word	607
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 114
+ 4372 0200 00000000 		.space	3584
+ 4372      00000000 
+ 4372      00000000 
+ 4372      00000000 
+ 4372      00000000 
+ 4373              		.global	Saw_LUT
+ 4374              		.section	.data.Saw_LUT,"aw"
+ 4375              		.align	2
+ 4378              	Saw_LUT:
+ 4379 0000 00000000 		.word	0
+ 4380 0004 1F000000 		.word	31
+ 4381 0008 3F000000 		.word	63
+ 4382 000c 5F000000 		.word	95
+ 4383 0010 7F000000 		.word	127
+ 4384 0014 9F000000 		.word	159
+ 4385 0018 BF000000 		.word	191
+ 4386 001c DF000000 		.word	223
+ 4387 0020 FF000000 		.word	255
+ 4388 0024 1F010000 		.word	287
+ 4389 0028 3F010000 		.word	319
+ 4390 002c 5F010000 		.word	351
+ 4391 0030 7F010000 		.word	383
+ 4392 0034 9F010000 		.word	415
+ 4393 0038 BF010000 		.word	447
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 114
 
 
- 4398 0050 7F020000 		.word	639
- 4399 0054 9F020000 		.word	671
- 4400 0058 BF020000 		.word	703
- 4401 005c DF020000 		.word	735
- 4402 0060 FF020000 		.word	767
- 4403 0064 1F030000 		.word	799
- 4404 0068 3F030000 		.word	831
- 4405 006c 5F030000 		.word	863
- 4406 0070 7F030000 		.word	895
- 4407 0074 9F030000 		.word	927
- 4408 0078 BF030000 		.word	959
- 4409 007c DF030000 		.word	991
- 4410 0080 FF030000 		.word	1023
- 4411 0084 1F040000 		.word	1055
- 4412 0088 3F040000 		.word	1087
- 4413 008c 5F040000 		.word	1119
- 4414 0090 7F040000 		.word	1151
- 4415 0094 9F040000 		.word	1183
- 4416 0098 BF040000 		.word	1215
- 4417 009c DF040000 		.word	1247
- 4418 00a0 FF040000 		.word	1279
- 4419 00a4 1F050000 		.word	1311
- 4420 00a8 3F050000 		.word	1343
- 4421 00ac 5F050000 		.word	1375
- 4422 00b0 7F050000 		.word	1407
- 4423 00b4 9F050000 		.word	1439
- 4424 00b8 BF050000 		.word	1471
- 4425 00bc DF050000 		.word	1503
- 4426 00c0 FF050000 		.word	1535
- 4427 00c4 1F060000 		.word	1567
- 4428 00c8 3F060000 		.word	1599
- 4429 00cc 5F060000 		.word	1631
- 4430 00d0 7F060000 		.word	1663
- 4431 00d4 9F060000 		.word	1695
- 4432 00d8 BF060000 		.word	1727
- 4433 00dc DF060000 		.word	1759
- 4434 00e0 FF060000 		.word	1791
- 4435 00e4 1F070000 		.word	1823
- 4436 00e8 3F070000 		.word	1855
- 4437 00ec 5F070000 		.word	1887
- 4438 00f0 7F070000 		.word	1919
- 4439 00f4 9F070000 		.word	1951
- 4440 00f8 BF070000 		.word	1983
- 4441 00fc DF070000 		.word	2015
- 4442 0100 FF070000 		.word	2047
- 4443 0104 1F080000 		.word	2079
- 4444 0108 3F080000 		.word	2111
- 4445 010c 5F080000 		.word	2143
- 4446 0110 7F080000 		.word	2175
- 4447 0114 9F080000 		.word	2207
- 4448 0118 BF080000 		.word	2239
- 4449 011c DF080000 		.word	2271
- 4450 0120 FF080000 		.word	2303
- 4451 0124 1F090000 		.word	2335
- 4452 0128 3F090000 		.word	2367
- 4453 012c 5F090000 		.word	2399
- 4454 0130 7F090000 		.word	2431
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 115
+ 4394 003c DF010000 		.word	479
+ 4395 0040 FF010000 		.word	511
+ 4396 0044 1F020000 		.word	543
+ 4397 0048 3F020000 		.word	575
+ 4398 004c 5F020000 		.word	607
+ 4399 0050 7F020000 		.word	639
+ 4400 0054 9F020000 		.word	671
+ 4401 0058 BF020000 		.word	703
+ 4402 005c DF020000 		.word	735
+ 4403 0060 FF020000 		.word	767
+ 4404 0064 1F030000 		.word	799
+ 4405 0068 3F030000 		.word	831
+ 4406 006c 5F030000 		.word	863
+ 4407 0070 7F030000 		.word	895
+ 4408 0074 9F030000 		.word	927
+ 4409 0078 BF030000 		.word	959
+ 4410 007c DF030000 		.word	991
+ 4411 0080 FF030000 		.word	1023
+ 4412 0084 1F040000 		.word	1055
+ 4413 0088 3F040000 		.word	1087
+ 4414 008c 5F040000 		.word	1119
+ 4415 0090 7F040000 		.word	1151
+ 4416 0094 9F040000 		.word	1183
+ 4417 0098 BF040000 		.word	1215
+ 4418 009c DF040000 		.word	1247
+ 4419 00a0 FF040000 		.word	1279
+ 4420 00a4 1F050000 		.word	1311
+ 4421 00a8 3F050000 		.word	1343
+ 4422 00ac 5F050000 		.word	1375
+ 4423 00b0 7F050000 		.word	1407
+ 4424 00b4 9F050000 		.word	1439
+ 4425 00b8 BF050000 		.word	1471
+ 4426 00bc DF050000 		.word	1503
+ 4427 00c0 FF050000 		.word	1535
+ 4428 00c4 1F060000 		.word	1567
+ 4429 00c8 3F060000 		.word	1599
+ 4430 00cc 5F060000 		.word	1631
+ 4431 00d0 7F060000 		.word	1663
+ 4432 00d4 9F060000 		.word	1695
+ 4433 00d8 BF060000 		.word	1727
+ 4434 00dc DF060000 		.word	1759
+ 4435 00e0 FF060000 		.word	1791
+ 4436 00e4 1F070000 		.word	1823
+ 4437 00e8 3F070000 		.word	1855
+ 4438 00ec 5F070000 		.word	1887
+ 4439 00f0 7F070000 		.word	1919
+ 4440 00f4 9F070000 		.word	1951
+ 4441 00f8 BF070000 		.word	1983
+ 4442 00fc DF070000 		.word	2015
+ 4443 0100 FF070000 		.word	2047
+ 4444 0104 1F080000 		.word	2079
+ 4445 0108 3F080000 		.word	2111
+ 4446 010c 5F080000 		.word	2143
+ 4447 0110 7F080000 		.word	2175
+ 4448 0114 9F080000 		.word	2207
+ 4449 0118 BF080000 		.word	2239
+ 4450 011c DF080000 		.word	2271
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 115
 
 
- 4455 0134 9F090000 		.word	2463
- 4456 0138 BF090000 		.word	2495
- 4457 013c DF090000 		.word	2527
- 4458 0140 FF090000 		.word	2559
- 4459 0144 1F0A0000 		.word	2591
- 4460 0148 3F0A0000 		.word	2623
- 4461 014c 5F0A0000 		.word	2655
- 4462 0150 7F0A0000 		.word	2687
- 4463 0154 9F0A0000 		.word	2719
- 4464 0158 BF0A0000 		.word	2751
- 4465 015c DF0A0000 		.word	2783
- 4466 0160 FF0A0000 		.word	2815
- 4467 0164 1F0B0000 		.word	2847
- 4468 0168 3F0B0000 		.word	2879
- 4469 016c 5F0B0000 		.word	2911
- 4470 0170 7F0B0000 		.word	2943
- 4471 0174 9F0B0000 		.word	2975
- 4472 0178 BF0B0000 		.word	3007
- 4473 017c DF0B0000 		.word	3039
- 4474 0180 FF0B0000 		.word	3071
- 4475 0184 1F0C0000 		.word	3103
- 4476 0188 3F0C0000 		.word	3135
- 4477 018c 5F0C0000 		.word	3167
- 4478 0190 7F0C0000 		.word	3199
- 4479 0194 9F0C0000 		.word	3231
- 4480 0198 BF0C0000 		.word	3263
- 4481 019c DF0C0000 		.word	3295
- 4482 01a0 FF0C0000 		.word	3327
- 4483 01a4 1F0D0000 		.word	3359
- 4484 01a8 3F0D0000 		.word	3391
- 4485 01ac 5F0D0000 		.word	3423
- 4486 01b0 7F0D0000 		.word	3455
- 4487 01b4 9F0D0000 		.word	3487
- 4488 01b8 BF0D0000 		.word	3519
- 4489 01bc DF0D0000 		.word	3551
- 4490 01c0 FF0D0000 		.word	3583
- 4491 01c4 1F0E0000 		.word	3615
- 4492 01c8 3F0E0000 		.word	3647
- 4493 01cc 5F0E0000 		.word	3679
- 4494 01d0 7F0E0000 		.word	3711
- 4495 01d4 9F0E0000 		.word	3743
- 4496 01d8 BF0E0000 		.word	3775
- 4497 01dc DF0E0000 		.word	3807
- 4498 01e0 FF0E0000 		.word	3839
- 4499 01e4 1F0F0000 		.word	3871
- 4500 01e8 3F0F0000 		.word	3903
- 4501 01ec 5F0F0000 		.word	3935
- 4502 01f0 7F0F0000 		.word	3967
- 4503 01f4 9F0F0000 		.word	3999
- 4504 01f8 BF0F0000 		.word	4031
- 4505 01fc DF0F0000 		.word	4063
- 4506              		.global	Sin_LUT
- 4507              		.section	.data.Sin_LUT,"aw"
- 4508              		.align	2
- 4511              	Sin_LUT:
- 4512 0000 FF070000 		.word	2047
- 4513 0004 63080000 		.word	2147
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 116
+ 4451 0120 FF080000 		.word	2303
+ 4452 0124 1F090000 		.word	2335
+ 4453 0128 3F090000 		.word	2367
+ 4454 012c 5F090000 		.word	2399
+ 4455 0130 7F090000 		.word	2431
+ 4456 0134 9F090000 		.word	2463
+ 4457 0138 BF090000 		.word	2495
+ 4458 013c DF090000 		.word	2527
+ 4459 0140 FF090000 		.word	2559
+ 4460 0144 1F0A0000 		.word	2591
+ 4461 0148 3F0A0000 		.word	2623
+ 4462 014c 5F0A0000 		.word	2655
+ 4463 0150 7F0A0000 		.word	2687
+ 4464 0154 9F0A0000 		.word	2719
+ 4465 0158 BF0A0000 		.word	2751
+ 4466 015c DF0A0000 		.word	2783
+ 4467 0160 FF0A0000 		.word	2815
+ 4468 0164 1F0B0000 		.word	2847
+ 4469 0168 3F0B0000 		.word	2879
+ 4470 016c 5F0B0000 		.word	2911
+ 4471 0170 7F0B0000 		.word	2943
+ 4472 0174 9F0B0000 		.word	2975
+ 4473 0178 BF0B0000 		.word	3007
+ 4474 017c DF0B0000 		.word	3039
+ 4475 0180 FF0B0000 		.word	3071
+ 4476 0184 1F0C0000 		.word	3103
+ 4477 0188 3F0C0000 		.word	3135
+ 4478 018c 5F0C0000 		.word	3167
+ 4479 0190 7F0C0000 		.word	3199
+ 4480 0194 9F0C0000 		.word	3231
+ 4481 0198 BF0C0000 		.word	3263
+ 4482 019c DF0C0000 		.word	3295
+ 4483 01a0 FF0C0000 		.word	3327
+ 4484 01a4 1F0D0000 		.word	3359
+ 4485 01a8 3F0D0000 		.word	3391
+ 4486 01ac 5F0D0000 		.word	3423
+ 4487 01b0 7F0D0000 		.word	3455
+ 4488 01b4 9F0D0000 		.word	3487
+ 4489 01b8 BF0D0000 		.word	3519
+ 4490 01bc DF0D0000 		.word	3551
+ 4491 01c0 FF0D0000 		.word	3583
+ 4492 01c4 1F0E0000 		.word	3615
+ 4493 01c8 3F0E0000 		.word	3647
+ 4494 01cc 5F0E0000 		.word	3679
+ 4495 01d0 7F0E0000 		.word	3711
+ 4496 01d4 9F0E0000 		.word	3743
+ 4497 01d8 BF0E0000 		.word	3775
+ 4498 01dc DF0E0000 		.word	3807
+ 4499 01e0 FF0E0000 		.word	3839
+ 4500 01e4 1F0F0000 		.word	3871
+ 4501 01e8 3F0F0000 		.word	3903
+ 4502 01ec 5F0F0000 		.word	3935
+ 4503 01f0 7F0F0000 		.word	3967
+ 4504 01f4 9F0F0000 		.word	3999
+ 4505 01f8 BF0F0000 		.word	4031
+ 4506 01fc DF0F0000 		.word	4063
+ 4507 0200 00000000 		.space	3584
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 116
 
 
- 4514 0008 C8080000 		.word	2248
- 4515 000c 2B090000 		.word	2347
- 4516 0010 8E090000 		.word	2446
- 4517 0014 F1090000 		.word	2545
- 4518 0018 510A0000 		.word	2641
- 4519 001c B10A0000 		.word	2737
- 4520 0020 0F0B0000 		.word	2831
- 4521 0024 6A0B0000 		.word	2922
- 4522 0028 C40B0000 		.word	3012
- 4523 002c 1C0C0000 		.word	3100
- 4524 0030 710C0000 		.word	3185
- 4525 0034 C30C0000 		.word	3267
- 4526 0038 120D0000 		.word	3346
- 4527 003c 5E0D0000 		.word	3422
- 4528 0040 A70D0000 		.word	3495
- 4529 0044 EC0D0000 		.word	3564
- 4530 0048 2E0E0000 		.word	3630
- 4531 004c 6C0E0000 		.word	3692
- 4532 0050 A50E0000 		.word	3749
- 4533 0054 DB0E0000 		.word	3803
- 4534 0058 0D0F0000 		.word	3853
- 4535 005c 3A0F0000 		.word	3898
- 4536 0060 630F0000 		.word	3939
- 4537 0064 870F0000 		.word	3975
- 4538 0068 A60F0000 		.word	4006
- 4539 006c C10F0000 		.word	4033
- 4540 0070 D70F0000 		.word	4055
- 4541 0074 E80F0000 		.word	4072
- 4542 0078 F50F0000 		.word	4085
- 4543 007c FC0F0000 		.word	4092
- 4544 0080 FF0F0000 		.word	4095
- 4545 0084 FC0F0000 		.word	4092
- 4546 0088 F50F0000 		.word	4085
- 4547 008c E80F0000 		.word	4072
- 4548 0090 D70F0000 		.word	4055
- 4549 0094 C10F0000 		.word	4033
- 4550 0098 A60F0000 		.word	4006
- 4551 009c 870F0000 		.word	3975
- 4552 00a0 630F0000 		.word	3939
- 4553 00a4 3A0F0000 		.word	3898
- 4554 00a8 0D0F0000 		.word	3853
- 4555 00ac DB0E0000 		.word	3803
- 4556 00b0 A50E0000 		.word	3749
- 4557 00b4 6C0E0000 		.word	3692
- 4558 00b8 2E0E0000 		.word	3630
- 4559 00bc EC0D0000 		.word	3564
- 4560 00c0 A70D0000 		.word	3495
- 4561 00c4 5E0D0000 		.word	3422
- 4562 00c8 120D0000 		.word	3346
- 4563 00cc C30C0000 		.word	3267
- 4564 00d0 710C0000 		.word	3185
- 4565 00d4 1C0C0000 		.word	3100
- 4566 00d8 C40B0000 		.word	3012
- 4567 00dc 6A0B0000 		.word	2922
- 4568 00e0 0F0B0000 		.word	2831
- 4569 00e4 B10A0000 		.word	2737
- 4570 00e8 510A0000 		.word	2641
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 117
+ 4507      00000000 
+ 4507      00000000 
+ 4507      00000000 
+ 4507      00000000 
+ 4508              		.global	Sin_LUT
+ 4509              		.section	.data.Sin_LUT,"aw"
+ 4510              		.align	2
+ 4513              	Sin_LUT:
+ 4514 0000 FF070000 		.word	2047
+ 4515 0004 63080000 		.word	2147
+ 4516 0008 C8080000 		.word	2248
+ 4517 000c 2B090000 		.word	2347
+ 4518 0010 8E090000 		.word	2446
+ 4519 0014 F1090000 		.word	2545
+ 4520 0018 510A0000 		.word	2641
+ 4521 001c B10A0000 		.word	2737
+ 4522 0020 0F0B0000 		.word	2831
+ 4523 0024 6A0B0000 		.word	2922
+ 4524 0028 C40B0000 		.word	3012
+ 4525 002c 1C0C0000 		.word	3100
+ 4526 0030 710C0000 		.word	3185
+ 4527 0034 C30C0000 		.word	3267
+ 4528 0038 120D0000 		.word	3346
+ 4529 003c 5E0D0000 		.word	3422
+ 4530 0040 A70D0000 		.word	3495
+ 4531 0044 EC0D0000 		.word	3564
+ 4532 0048 2E0E0000 		.word	3630
+ 4533 004c 6C0E0000 		.word	3692
+ 4534 0050 A50E0000 		.word	3749
+ 4535 0054 DB0E0000 		.word	3803
+ 4536 0058 0D0F0000 		.word	3853
+ 4537 005c 3A0F0000 		.word	3898
+ 4538 0060 630F0000 		.word	3939
+ 4539 0064 870F0000 		.word	3975
+ 4540 0068 A60F0000 		.word	4006
+ 4541 006c C10F0000 		.word	4033
+ 4542 0070 D70F0000 		.word	4055
+ 4543 0074 E80F0000 		.word	4072
+ 4544 0078 F50F0000 		.word	4085
+ 4545 007c FC0F0000 		.word	4092
+ 4546 0080 FF0F0000 		.word	4095
+ 4547 0084 FC0F0000 		.word	4092
+ 4548 0088 F50F0000 		.word	4085
+ 4549 008c E80F0000 		.word	4072
+ 4550 0090 D70F0000 		.word	4055
+ 4551 0094 C10F0000 		.word	4033
+ 4552 0098 A60F0000 		.word	4006
+ 4553 009c 870F0000 		.word	3975
+ 4554 00a0 630F0000 		.word	3939
+ 4555 00a4 3A0F0000 		.word	3898
+ 4556 00a8 0D0F0000 		.word	3853
+ 4557 00ac DB0E0000 		.word	3803
+ 4558 00b0 A50E0000 		.word	3749
+ 4559 00b4 6C0E0000 		.word	3692
+ 4560 00b8 2E0E0000 		.word	3630
+ 4561 00bc EC0D0000 		.word	3564
+ 4562 00c0 A70D0000 		.word	3495
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 117
 
 
- 4571 00ec F1090000 		.word	2545
- 4572 00f0 8E090000 		.word	2446
- 4573 00f4 2B090000 		.word	2347
- 4574 00f8 C8080000 		.word	2248
- 4575 00fc 63080000 		.word	2147
- 4576 0100 FF070000 		.word	2047
- 4577 0104 9B070000 		.word	1947
- 4578 0108 36070000 		.word	1846
- 4579 010c D3060000 		.word	1747
- 4580 0110 70060000 		.word	1648
- 4581 0114 0D060000 		.word	1549
- 4582 0118 AD050000 		.word	1453
- 4583 011c 4D050000 		.word	1357
- 4584 0120 EF040000 		.word	1263
- 4585 0124 94040000 		.word	1172
- 4586 0128 3A040000 		.word	1082
- 4587 012c E2030000 		.word	994
- 4588 0130 8D030000 		.word	909
- 4589 0134 3B030000 		.word	827
- 4590 0138 EC020000 		.word	748
- 4591 013c A0020000 		.word	672
- 4592 0140 57020000 		.word	599
- 4593 0144 12020000 		.word	530
- 4594 0148 D0010000 		.word	464
- 4595 014c 92010000 		.word	402
- 4596 0150 59010000 		.word	345
- 4597 0154 23010000 		.word	291
- 4598 0158 F1000000 		.word	241
- 4599 015c C4000000 		.word	196
- 4600 0160 9B000000 		.word	155
- 4601 0164 77000000 		.word	119
- 4602 0168 58000000 		.word	88
- 4603 016c 3D000000 		.word	61
- 4604 0170 27000000 		.word	39
- 4605 0174 16000000 		.word	22
- 4606 0178 09000000 		.word	9
- 4607 017c 02000000 		.word	2
- 4608 0180 00000000 		.word	0
- 4609 0184 02000000 		.word	2
- 4610 0188 09000000 		.word	9
- 4611 018c 16000000 		.word	22
- 4612 0190 27000000 		.word	39
- 4613 0194 3D000000 		.word	61
- 4614 0198 58000000 		.word	88
- 4615 019c 77000000 		.word	119
- 4616 01a0 9B000000 		.word	155
- 4617 01a4 C4000000 		.word	196
- 4618 01a8 F1000000 		.word	241
- 4619 01ac 23010000 		.word	291
- 4620 01b0 59010000 		.word	345
- 4621 01b4 92010000 		.word	402
- 4622 01b8 D0010000 		.word	464
- 4623 01bc 12020000 		.word	530
- 4624 01c0 57020000 		.word	599
- 4625 01c4 A0020000 		.word	672
- 4626 01c8 EC020000 		.word	748
- 4627 01cc 3B030000 		.word	827
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 118
+ 4563 00c4 5E0D0000 		.word	3422
+ 4564 00c8 120D0000 		.word	3346
+ 4565 00cc C30C0000 		.word	3267
+ 4566 00d0 710C0000 		.word	3185
+ 4567 00d4 1C0C0000 		.word	3100
+ 4568 00d8 C40B0000 		.word	3012
+ 4569 00dc 6A0B0000 		.word	2922
+ 4570 00e0 0F0B0000 		.word	2831
+ 4571 00e4 B10A0000 		.word	2737
+ 4572 00e8 510A0000 		.word	2641
+ 4573 00ec F1090000 		.word	2545
+ 4574 00f0 8E090000 		.word	2446
+ 4575 00f4 2B090000 		.word	2347
+ 4576 00f8 C8080000 		.word	2248
+ 4577 00fc 63080000 		.word	2147
+ 4578 0100 FF070000 		.word	2047
+ 4579 0104 9B070000 		.word	1947
+ 4580 0108 36070000 		.word	1846
+ 4581 010c D3060000 		.word	1747
+ 4582 0110 70060000 		.word	1648
+ 4583 0114 0D060000 		.word	1549
+ 4584 0118 AD050000 		.word	1453
+ 4585 011c 4D050000 		.word	1357
+ 4586 0120 EF040000 		.word	1263
+ 4587 0124 94040000 		.word	1172
+ 4588 0128 3A040000 		.word	1082
+ 4589 012c E2030000 		.word	994
+ 4590 0130 8D030000 		.word	909
+ 4591 0134 3B030000 		.word	827
+ 4592 0138 EC020000 		.word	748
+ 4593 013c A0020000 		.word	672
+ 4594 0140 57020000 		.word	599
+ 4595 0144 12020000 		.word	530
+ 4596 0148 D0010000 		.word	464
+ 4597 014c 92010000 		.word	402
+ 4598 0150 59010000 		.word	345
+ 4599 0154 23010000 		.word	291
+ 4600 0158 F1000000 		.word	241
+ 4601 015c C4000000 		.word	196
+ 4602 0160 9B000000 		.word	155
+ 4603 0164 77000000 		.word	119
+ 4604 0168 58000000 		.word	88
+ 4605 016c 3D000000 		.word	61
+ 4606 0170 27000000 		.word	39
+ 4607 0174 16000000 		.word	22
+ 4608 0178 09000000 		.word	9
+ 4609 017c 02000000 		.word	2
+ 4610 0180 00000000 		.word	0
+ 4611 0184 02000000 		.word	2
+ 4612 0188 09000000 		.word	9
+ 4613 018c 16000000 		.word	22
+ 4614 0190 27000000 		.word	39
+ 4615 0194 3D000000 		.word	61
+ 4616 0198 58000000 		.word	88
+ 4617 019c 77000000 		.word	119
+ 4618 01a0 9B000000 		.word	155
+ 4619 01a4 C4000000 		.word	196
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 118
 
 
- 4628 01d0 8D030000 		.word	909
- 4629 01d4 E2030000 		.word	994
- 4630 01d8 3A040000 		.word	1082
- 4631 01dc 94040000 		.word	1172
- 4632 01e0 EF040000 		.word	1263
- 4633 01e4 4D050000 		.word	1357
- 4634 01e8 AD050000 		.word	1453
- 4635 01ec 0D060000 		.word	1549
- 4636 01f0 70060000 		.word	1648
- 4637 01f4 D3060000 		.word	1747
- 4638 01f8 36070000 		.word	1846
- 4639 01fc 9B070000 		.word	1947
- 4640              		.global	hdma_tim2_ch1
- 4641              		.section	.bss.hdma_tim2_ch1,"aw",%nobits
- 4642              		.align	2
- 4645              	hdma_tim2_ch1:
- 4646 0000 00000000 		.space	96
- 4646      00000000 
- 4646      00000000 
- 4646      00000000 
- 4646      00000000 
- 4647              		.global	htim3
- 4648              		.section	.bss.htim3,"aw",%nobits
- 4649              		.align	2
- 4652              	htim3:
- 4653 0000 00000000 		.space	72
- 4653      00000000 
- 4653      00000000 
- 4653      00000000 
- 4653      00000000 
- 4654              		.global	htim2
- 4655              		.section	.bss.htim2,"aw",%nobits
- 4656              		.align	2
- 4659              	htim2:
- 4660 0000 00000000 		.space	72
- 4660      00000000 
- 4660      00000000 
- 4660      00000000 
- 4660      00000000 
- 4661              		.text
- 4662              	.Letext0:
- 4663              		.file 3 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
- 4664              		.file 4 "C:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-to
- 4665              		.file 5 "C:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-to
- 4666              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 4667              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h"
- 4668              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h"
- 4669              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 4670              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 4671              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
- 4672              		.file 12 "Core/Inc/main.h"
- 4673              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
- 4674              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
- 4675              		.file 15 "Core/Inc/lcd_stm32f4.h"
- 4676              		.file 16 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
- 4677              		.file 17 "<built-in>"
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 119
+ 4620 01a8 F1000000 		.word	241
+ 4621 01ac 23010000 		.word	291
+ 4622 01b0 59010000 		.word	345
+ 4623 01b4 92010000 		.word	402
+ 4624 01b8 D0010000 		.word	464
+ 4625 01bc 12020000 		.word	530
+ 4626 01c0 57020000 		.word	599
+ 4627 01c4 A0020000 		.word	672
+ 4628 01c8 EC020000 		.word	748
+ 4629 01cc 3B030000 		.word	827
+ 4630 01d0 8D030000 		.word	909
+ 4631 01d4 E2030000 		.word	994
+ 4632 01d8 3A040000 		.word	1082
+ 4633 01dc 94040000 		.word	1172
+ 4634 01e0 EF040000 		.word	1263
+ 4635 01e4 4D050000 		.word	1357
+ 4636 01e8 AD050000 		.word	1453
+ 4637 01ec 0D060000 		.word	1549
+ 4638 01f0 70060000 		.word	1648
+ 4639 01f4 D3060000 		.word	1747
+ 4640 01f8 36070000 		.word	1846
+ 4641 01fc 9B070000 		.word	1947
+ 4642 0200 00000000 		.space	3584
+ 4642      00000000 
+ 4642      00000000 
+ 4642      00000000 
+ 4642      00000000 
+ 4643              		.global	hdma_tim2_ch1
+ 4644              		.section	.bss.hdma_tim2_ch1,"aw",%nobits
+ 4645              		.align	2
+ 4648              	hdma_tim2_ch1:
+ 4649 0000 00000000 		.space	96
+ 4649      00000000 
+ 4649      00000000 
+ 4649      00000000 
+ 4649      00000000 
+ 4650              		.global	htim3
+ 4651              		.section	.bss.htim3,"aw",%nobits
+ 4652              		.align	2
+ 4655              	htim3:
+ 4656 0000 00000000 		.space	72
+ 4656      00000000 
+ 4656      00000000 
+ 4656      00000000 
+ 4656      00000000 
+ 4657              		.global	htim2
+ 4658              		.section	.bss.htim2,"aw",%nobits
+ 4659              		.align	2
+ 4662              	htim2:
+ 4663 0000 00000000 		.space	72
+ 4663      00000000 
+ 4663      00000000 
+ 4663      00000000 
+ 4663      00000000 
+ 4664              		.text
+ 4665              	.Letext0:
+ 4666              		.file 3 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f446xx.h"
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 119
+
+
+ 4667              		.file 4 "C:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-to
+ 4668              		.file 5 "C:/Users/nhlan/AppData/Roaming/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-to
+ 4669              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 4670              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h"
+ 4671              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h"
+ 4672              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 4673              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 4674              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+ 4675              		.file 12 "Core/Inc/main.h"
+ 4676              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
+ 4677              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
+ 4678              		.file 15 "Core/Inc/lcd_stm32f4.h"
+ 4679              		.file 16 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ 4680              		.file 17 "<built-in>"
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 120
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:21     .text.MX_GPIO_Init:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:189    .text.MX_GPIO_Init:000000d4 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:197    .text.MX_DMA_Init:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:202    .text.MX_DMA_Init:00000000 MX_DMA_Init
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:248    .text.MX_DMA_Init:00000030 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:253    .rodata.EXTI0_IRQHandler.str1.4:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:257    .text.EXTI0_IRQHandler:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:263    .text.EXTI0_IRQHandler:00000000 EXTI0_IRQHandler
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:377    .text.EXTI0_IRQHandler:00000098 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1128   .bss.lastDebounceTick:00000000 lastDebounceTick
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4659   .bss.htim2:00000000 htim2
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4645   .bss.hdma_tim2_ch1:00000000 hdma_tim2_ch1
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1121   .bss.currentWave:00000000 currentWave
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1135   .data.DestAddress:00000000 DestAddress
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1110   .data.waveforms:00000000 waveforms
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1098   .data.waveNames:00000000 waveNames
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:391    .text.Error_Handler:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:397    .text.Error_Handler:00000000 Error_Handler
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:429    .text.MX_TIM2_Init:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:434    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:662    .text.MX_TIM2_Init:00000100 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1142   .data.TIM2_Ticks:00000000 TIM2_Ticks
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:671    .text.MX_TIM3_Init:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:676    .text.MX_TIM3_Init:00000000 MX_TIM3_Init
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:825    .text.MX_TIM3_Init:0000009c $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4652   .bss.htim3:00000000 htim3
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:831    .text.SystemClock_Config:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:837    .text.SystemClock_Config:00000000 SystemClock_Config
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:964    .text.SystemClock_Config:00000084 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:970    .rodata.main.str1.4:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:977    .text.main:00000000 $t
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:983    .text.main:00000000 main
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1067   .text.main:00000068 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4511   .data.Sin_LUT:00000000 Sin_LUT
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1079   .rodata.str1.4:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1095   .data.waveNames:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1107   .data.waveforms:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4377   .data.Saw_LUT:00000000 Saw_LUT
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4243   .data.Triangle_LUT:00000000 Triangle_LUT
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:2181   .data.Piano_LUT:00000000 Piano_LUT
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1149   .data.Guitar_LUT:00000000 Guitar_LUT
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:3212   .data.Drum_LUT:00000000 Drum_LUT
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1122   .bss.currentWave:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1125   .bss.lastDebounceTick:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1132   .data.DestAddress:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1139   .data.TIM2_Ticks:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:1146   .data.Guitar_LUT:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:2178   .data.Piano_LUT:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:3209   .data.Drum_LUT:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4240   .data.Triangle_LUT:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4374   .data.Saw_LUT:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4508   .data.Sin_LUT:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4642   .bss.hdma_tim2_ch1:00000000 $d
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4649   .bss.htim3:00000000 $d
-ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s 			page 120
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:21     .text.MX_GPIO_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:26     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:189    .text.MX_GPIO_Init:000000d4 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:197    .text.MX_DMA_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:202    .text.MX_DMA_Init:00000000 MX_DMA_Init
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:248    .text.MX_DMA_Init:00000030 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:253    .rodata.EXTI0_IRQHandler.str1.4:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:257    .text.EXTI0_IRQHandler:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:263    .text.EXTI0_IRQHandler:00000000 EXTI0_IRQHandler
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:377    .text.EXTI0_IRQHandler:00000098 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1128   .bss.lastDebounceTick:00000000 lastDebounceTick
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4662   .bss.htim2:00000000 htim2
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4648   .bss.hdma_tim2_ch1:00000000 hdma_tim2_ch1
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1121   .bss.currentWave:00000000 currentWave
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1135   .data.DestAddress:00000000 DestAddress
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1110   .data.waveforms:00000000 waveforms
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1098   .data.waveNames:00000000 waveNames
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:391    .text.Error_Handler:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:397    .text.Error_Handler:00000000 Error_Handler
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:429    .text.MX_TIM2_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:434    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:662    .text.MX_TIM2_Init:00000100 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1142   .data.TIM2_Ticks:00000000 TIM2_Ticks
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:671    .text.MX_TIM3_Init:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:676    .text.MX_TIM3_Init:00000000 MX_TIM3_Init
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:825    .text.MX_TIM3_Init:0000009c $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4655   .bss.htim3:00000000 htim3
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:831    .text.SystemClock_Config:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:837    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:964    .text.SystemClock_Config:00000084 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:970    .rodata.main.str1.4:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:977    .text.main:00000000 $t
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:983    .text.main:00000000 main
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1067   .text.main:0000006c $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4513   .data.Sin_LUT:00000000 Sin_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1079   .rodata.str1.4:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1095   .data.waveNames:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1107   .data.waveforms:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4378   .data.Saw_LUT:00000000 Saw_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4243   .data.Triangle_LUT:00000000 Triangle_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:2181   .data.Piano_LUT:00000000 Piano_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1149   .data.Guitar_LUT:00000000 Guitar_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:3212   .data.Drum_LUT:00000000 Drum_LUT
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1122   .bss.currentWave:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1125   .bss.lastDebounceTick:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1132   .data.DestAddress:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1139   .data.TIM2_Ticks:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:1146   .data.Guitar_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:2178   .data.Piano_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:3209   .data.Drum_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4240   .data.Triangle_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4375   .data.Saw_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4510   .data.Sin_LUT:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4645   .bss.hdma_tim2_ch1:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4652   .bss.htim3:00000000 $d
+ARM GAS  C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s 			page 121
 
 
-C:\Users\nhlan\AppData\Local\Temp\ccPOmyJ3.s:4656   .bss.htim2:00000000 $d
+C:\Users\nhlan\AppData\Local\Temp\ccUTUOs8.s:4659   .bss.htim2:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_Init

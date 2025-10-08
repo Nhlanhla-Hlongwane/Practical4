@@ -43,7 +43,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
-/* USER CODE END PM */
+/* USER CODE END PM */                                                                                        c
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
