@@ -34,13 +34,13 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 // TODO: Add values for below variables
-#define NS 128 // Number of samples in LUT
+#define NS 1024        // Number of samples in LUT
 #define TIM2CLK 16000000  // STM Clock frequency: Hint You might want to check the ioc file
-#define F_SIGNAL 172// Frequency of output analog signal
+#define F_SIGNAL 1 // Frequency of output analog signal
 
 /* USER CODE END PD */
 
-/* Private macro ------------------------------------------------------------*/
+/* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
 /* USER CODE END PM */
@@ -56,7 +56,7 @@ DMA_HandleTypeDef hdma_tim2_ch1;
 uint32_t Sin_LUT[NS] = {2047, 2147, 2248, 2347, 2446, 2545, 2641, 2737, 2831, 2922, 3012, 3100, 3185, 3267, 3346, 3422, 3495, 3564, 3630, 3692, 3749, 3803, 3853, 3898, 3939, 3975, 4006, 4033, 4055, 4072, 4085, 4092, 4095, 4092, 4085, 4072, 4055, 4033, 4006, 3975, 3939, 3898, 3853, 3803, 3749, 3692, 3630, 3564, 3495, 3422, 3346, 3267, 3185, 3100, 3012, 2922, 2831, 2737, 2641, 2545, 2446, 2347, 2248, 2147, 2047, 1947, 1846, 1747, 1648, 1549, 1453, 1357, 1263, 1172, 1082, 994, 909, 827, 748, 672, 599, 530, 464, 402, 345, 291, 241, 196, 155, 119, 88, 61, 39, 22, 9, 2, 0, 2, 9, 22, 39, 61, 88, 119, 155, 196, 241, 291, 345, 402, 464, 530, 599, 672, 748, 827, 909, 994, 1082, 1172, 1263, 1357, 1453, 1549, 1648, 1747, 1846, 1947};
 uint32_t Saw_LUT[NS] = {0, 31, 63, 95, 127, 159, 191, 223, 255, 287, 319, 351, 383, 415, 447, 479, 511, 543, 575, 607, 639, 671, 703, 735, 767, 799, 831, 863, 895, 927, 959, 991, 1023, 1055, 1087, 1119, 1151, 1183, 1215, 1247, 1279, 1311, 1343, 1375, 1407, 1439, 1471, 1503, 1535, 1567, 1599, 1631, 1663, 1695, 1727, 1759, 1791, 1823, 1855, 1887, 1919, 1951, 1983, 2015, 2047, 2079, 2111, 2143, 2175, 2207, 2239, 2271, 2303, 2335, 2367, 2399, 2431, 2463, 2495, 2527, 2559, 2591, 2623, 2655, 2687, 2719, 2751, 2783, 2815, 2847, 2879, 2911, 2943, 2975, 3007, 3039, 3071, 3103, 3135, 3167, 3199, 3231, 3263, 3295, 3327, 3359, 3391, 3423, 3455, 3487, 3519, 3551, 3583, 3615, 3647, 3679, 3711, 3743, 3775, 3807, 3839, 3871, 3903, 3935, 3967, 3999, 4031, 4063};
 uint32_t Triangle_LUT[NS] = {0, 63, 127, 191, 255, 319, 383, 447, 511, 575, 639, 703, 767, 831, 895, 959, 1023, 1087, 1151, 1215, 1279, 1343, 1407, 1471, 1535, 1599, 1663, 1727, 1791, 1855, 1919, 1983, 2047, 2111, 2175, 2239, 2303, 2367, 2431, 2495, 2559, 2623, 2687, 2751, 2815, 2879, 2943, 3007, 3071, 3135, 3199, 3263, 3327, 3391, 3455, 3519, 3583, 3647, 3711, 3775, 3839, 3903, 3967, 4031, 4095, 4031, 3967, 3903, 3839, 3775, 3711, 3647, 3583, 3519, 3455, 3391, 3327, 3263, 3199, 3135, 3071, 3007, 2943, 2879, 2815, 2751, 2687, 2623, 2559, 2495, 2431, 2367, 2303, 2239, 2175, 2111, 2047, 1983, 1919, 1855, 1791, 1727, 1663, 1599, 1535, 1471, 1407, 1343, 1279, 1215, 1151, 1087, 1023, 959, 895, 831, 767, 703, 639, 575, 511, 447, 383, 319, 255, 191, 127, 63};
-uint32_t Drum_LUT[1025] = {
+uint32_t Drum_LUT[] = {
   2047,   2048,   2042,   605,   36,   389,   4094,   3, 
   3430,   996,   2224,   2227,   2207,   2168,   1951,   1901,
   1891,   2227,   1512,   2479,   1690,   2072,   2285,   1805,
@@ -120,7 +120,7 @@ uint32_t Drum_LUT[1025] = {
   2041,   1770,   2376,   1822,   1952,   2213,   2207,   2088,
   2061,   1959,   1994,   2062,   2064,   2051,   2057,   2047,
   2043,   1069,   1566,   2001,   2646,   849,   3657,   2008,
-  2415,   1678,   2254,   1730,   2469,   2043,   1789,   2258,
+  2415,   1678,   2254,   1730,   2469,   2043,  1789,   2258,
   1948,   1978,   4081,   2979,   2354,   2199,   2402,   1174,
   1850,   2192,   1640,   2475,   1485,   2270,   2163,   1993,
   2120,   2224,   1815,   2240,   1993,   1881,   2252,   1884,
@@ -188,7 +188,7 @@ uint32_t Drum_LUT[1025] = {
   2047
 };
 
-uint32_t Piano_LUT[1025] = {
+uint32_t Piano_LUT[] = {
   1901,   1901,   1332,   1737,   979,   2358,   2625,   1554, 
   2180,   2075,   1686,   1994,   1865,   1812,   1849,   1636,
   1937,   2051,   1863,   1945,   1971,   1887,   1898,   1880,
@@ -320,7 +320,7 @@ uint32_t Piano_LUT[1025] = {
   1901
 };
 
-uint32_t Guitar_LUT[1026] = {
+uint32_t Guitar_LUT[] = {
   1970,   1970,   1970,   1998,   2224,   2111,   2102,   2192, 
   1849,   1575,   1504,   1982,   2328,   2327,   2122,   1937,
   1892,   2070,   2137,   2060,   1798,   1585,   1664,   1982,
@@ -519,7 +519,7 @@ int main(void)
   // TODO: Write current waveform to LCD(Sine is the first waveform)
  init_LCD();
   lcd_command(CLEAR);
-  lcd_command(CURSOR_HOME)  ;
+  lcd_command(CURSOR_HOME);
   lcd_putstring("Waveform: ");
   lcd_command(LINE_TWO);
   lcd_putstring("Sine");
@@ -602,9 +602,9 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 0;
+  htim2.Init.Prescaler = 0;                    
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = TIM2_Ticks;
+  htim2.Init.Period = TIM2_Ticks-1;  
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -628,7 +628,7 @@ static void MX_TIM2_Init(void)
   }
   sConfigOC.OCMode = TIM_OCMODE_TIMING;
 
-  sConfigOC.Pulse = TIM2_Ticks - 1;
+  sConfigOC.Pulse = 0;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   if (HAL_TIM_OC_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
@@ -801,8 +801,8 @@ typedef enum {
     WAVE_SAW,
     WAVE_TRIANGLE,
     WAVE_PIANO,
-    WAVE_GUITAR,
     WAVE_DRUM,
+    WAVE_GUITAR,
     WAVE_COUNT
 } WaveformType;
 
@@ -811,14 +811,14 @@ volatile WaveformType currentWave = WAVE_SINE;
 uint32_t* waveforms[WAVE_COUNT] = {
     Sin_LUT,     // WAVE_SINE
     Saw_LUT,     // WAVE_SAW
-    Triangle_LUT,     // WAVE_TRIANGLE
+    Triangle_LUT, // WAVE_TRIANGLE
     Piano_LUT,   // WAVE_PIANO
-    Guitar_LUT,  // WAVE_GUITAR
-    Drum_LUT     // WAVE_DRUM
+    Drum_LUT,  // WAVE_GUITAR
+    Guitar_LUT     // WAVE_DRUM
 };
 //A table of pointers for the wave forms
 const char* waveNames[WAVE_COUNT] = {
-    "Sine", "Sawtooth", "Triangle", "Piano", "Guitar", "Drum"
+    "Sine", "Sawtooth", "Triangle", "Piano", "Drum", "Guitar"
 };
 
 
